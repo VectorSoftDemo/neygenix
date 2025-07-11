@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className=" py-20 bg-url('https://aeonglobalhealth.com/wp-content/uploads/2022/06/AEON-Global-Health3.png-scaled.jpg')">
+    <section className=" py-20 bg-cover bg-center bg-no-repeat " style={{ backgroundImage: "url('https://aeonglobalhealth.com/wp-content/uploads/2022/06/AEON-Global-Health3.png-scaled.jpg')" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-[#4a4e57] mb-6">

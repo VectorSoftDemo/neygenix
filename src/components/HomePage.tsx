@@ -1,4 +1,8 @@
-export default function HeroSection() {
+import CareerOpportunities from "./CareerOpportunities";
+import Curve from "./Curve";
+import OurCulture from "./OurCulture";
+
+export default function HomePage() {
   return (
     <section className="  bg-cover bg-center bg-no-repeat bg-fixed h-full" style={{ backgroundImage: "url('https://aeonglobalhealth.com/wp-content/uploads/2022/06/AEON-Global-Health3.png-scaled.jpg')" }}>
       <div className="max-w-7xl px-20 py-50 flex flex-col justify-center items-center gap-8">
@@ -54,12 +58,7 @@ export default function HeroSection() {
             We deliver information. We deliver insight. We deliver power to physicians. Know Better. Live Better.
           </p>
         </div>
-        <div className="w-full h-15 bg-[#424492] relative overflow-hidden rotate-180" style={{ marginTop: '-1px' }}>
-          <div
-            className="absolute left-1/2 -translate-x-1/2 -top-8 w-[107%] h-23 bg-[#EFEFEF] rounded-b-[100%] z-10"
-            style={{ borderBottomLeftRadius: "100% 190px", borderBottomRightRadius: "100% 190px" }}
-          ></div>
-        </div>
+        <Curve innerColor="#424492" outerColor="#EFEFEF" className="rotate-180" />
         <div className="flex justify-center items-center w-full bg-[#EFEFEF] p-8 gap-10">
           <div className="flex flex-col justify-center items-center gap-1 p-4">
             <div className="w-[293px] h-[293px]">
@@ -80,66 +79,10 @@ export default function HeroSection() {
             <h2 className="text-center text-2xl text-[#292929] font-bold">COVID-19 Testing</h2>
           </div>
         </div>
-        <div className="flex justify-between items-center w-full bg-[#EFEFEF] py-8 pl-8 pb-20 ">
-          <div className="flex flex-col gap-1 pl-8">
-            <div>
-              <h2 className="text-[40px] text-[#424492]  py-4 font-medium">
-                Our Culture
-              </h2>
-              <p className="text-[#292929] max-w-7xl text-xl ">
-                We understand that our work impacts the lives of people. Each day at AEON is filled with energy, enthusiasm and passion – our work is meaningful and our people understand that the role they play is making a difference in someone else’s life.
-              </p>
-            </div>
-            <div className="flex flex-col gap-1">
-              <h2 className="text-[30px] text-[#46A941]  py-4 font-semibold">
-                Together, We DRIVE Success.
-              </h2>
-              <div className="flex justify-around gap-4 w-full">
-                <div className="flex gap-1 items-center justify-around w-full">
-                  <div className=" flex flex-col gap-2">
-                    <img
-                      src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/diversitynew.png"
-                      alt="Toxicology Testing" className="w-[100px h-[110px]" />
-                    <p className="text-center text-lg  text-white py-1 px-4 rounded-3xl bg-[#424492] font-medium">Diversity</p>
-                  </div>
-                  <div className=" flex flex-col gap-2">
-                    <img
-                      src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/respectnew.png"
-                      alt="Toxicology Testing" className="w-[100px h-[110px]" />
-                    <p className="text-center text-lg  text-white py-1 px-4 rounded-3xl bg-[#424492] font-medium">Respect</p>
-                  </div>
-                  <div className=" flex flex-col gap-2">
-                    <img
-                      src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/intergritynew.png"
-                      alt="Toxicology Testing" className="w-[100px h-[110px]" />
-                    <p className="text-center text-lg  text-white py-1 px-4 rounded-3xl bg-[#424492] font-medium">Integrity</p>
-                  </div>
-                  <div className=" flex flex-col gap-2">
-                    <img
-                      src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/intergritynew.png"
-                      alt="Toxicology Testing" className="w-[100px h-[110px]" />
-                    <p className="text-center text-lg  text-white py-1 px-4 rounded-3xl bg-[#424492] font-medium">Excellence</p>
-                  </div>
-                  <div className=" flex flex-col gap-2">
-                    <img
-                      src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/excellencenew.png"
-                      alt="Toxicology Testing" className="w-[100px h-[110px]" />
-                    <p className="text-center text-lg  text-white py-1 px-4 rounded-3xl bg-[#424492] font-medium">Excellence</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-1 pl-8">
-            <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/Layer-20.png" alt="Toxicology Testing" className="w-full h-full" />
-          </div>
-        </div>
-        <div className="w-full h-15 bg-[#46A941] relative overflow-hidden " style={{ marginTop: '-1px' }}>
-          <div
-            className="absolute left-1/2 -translate-x-1/2 -top-8 w-[107%] h-23  bg-[#EFEFEF] rounded-b-[100%] z-10"
-            style={{ borderBottomLeftRadius: "100% 190px", borderBottomRightRadius: "100% 190px" }}
-          ></div>
-        </div>
+        <OurCulture
+          title="Our Culture"
+          description="We understand that our work impacts the lives of people. Each day at AEON is filled with energy, enthusiasm and passion – our work is meaningful and our people understand that the role they play is making a difference in someone else’s life." />
+        <Curve innerColor="#46A941" outerColor="#EFEFEF" />
         <div className="flex justify-center items-center w-full bg-[#46A941] p-8 gap-10 pb-20">
           <div className="flex flex-col gap-4">
             <h2 className="text-[40px] text-white py-4 font-medium">Latest Blogs</h2>
@@ -219,6 +162,30 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
+        <div className="flex justify-between items-center w-full bg-[#EFEFEF] py-4 gap-10 ">
+          <div className="flex flex-col gap-4">
+            <img
+              src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/Layer-20-Copy-200x444.png"
+              alt="Toxicology Testing" className="w-full h-full" />
+          </div>
+          <div className="flex flex-col gap-4 justify-center w-7xl pr-8">
+            <h1 className="2xl:text-4xl sm:text-2xl font-bold">Client Testimonials</h1>
+            <div className="text-lg bg-white p-4 ">
+              <p>Aeon is one of the most innovative agencies which understands the whole spectrum of the present Health Care System. Aeon has proven their strong footing in the industry with insistence on quality care.</p>
+            </div>
+            <p className="text-lg"><b>Mustafa Chagani</b>, CEO of The Texas International Institute of Health Professions</p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 justify-center items-center bg-[#424492] p-8">
+          <p className="2xl:text-4xl sm:text-2xl font-bold text-[#46A941]">Work With Us</p>
+          <p className="text-3xl text-white">Come and experience a culture rich in diversity and passion.</p>
+        </div>
+        <Curve innerColor="#46A941" outerColor="#424492" />
+        <CareerOpportunities
+          image="	https://aeonglobalhealth.com/wp-content/uploads/2022/06/aeon-ijmage-02.png"
+          title="Career Opportunities"
+          description="Our business encompasses many different functions. You can explore opportunities in laboratory operations and management, research, information technology, finance and administration, sales and account management, marketing and brand management, human resources and more."
+        />
       </div>
     </section>
   );

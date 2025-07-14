@@ -1,10 +1,11 @@
 import CareerOpportunities from "./CareerOpportunities";
+import ContactDetails from "./ContactDetails";
 import Curve from "./Curve";
 import OurCulture from "./OurCulture";
 
 export default function HomePage() {
   return (
-    <section className="  bg-cover bg-center bg-no-repeat bg-fixed h-full" style={{ backgroundImage: "url('https://aeonglobalhealth.com/wp-content/uploads/2022/06/AEON-Global-Health3.png-scaled.jpg')" }}>
+    <section className="  bg-cover bg-center bg-no-repeat bg-fixed min-h-screen" style={{ backgroundImage: "url('https://aeonglobalhealth.com/wp-content/uploads/2022/06/AEON-Global-Health3.png-scaled.jpg')" }}>
       <div className="max-w-7xl px-20 py-50 flex flex-col justify-center items-center gap-8">
         <div className="flex flex-col gap-8">
           <div className=" bg-white max-w-md px-4 py-2">
@@ -125,41 +126,7 @@ export default function HomePage() {
             </button>
           </div>
           <div>
-            <div className="w-[400px] mx-auto bg-[#3E973A] rounded-lg p-8 mt-8">
-              <h2 className="text-3xl font-bold text-white mb-6">Contact us</h2>
-              <form className="flex flex-col gap-4">
-                <div>
-                  <label className="block text-white font-semibold mb-1">Name (first last) <span className="text-white">*</span></label>
-                  <input type="text" required className="w-full px-4 py-2 bg-white rounded-lg " />
-                </div>
-                <div>
-                  <label className="block text-white font-semibold mb-1">Birth Date</label>
-                  <input type="date" className="w-full px-4 py-2 bg-white rounded-lg" placeholder="dd-mm-yyyy" />
-                </div>
-                <div>
-                  <label className="block text-white font-semibold mb-1">Gender</label>
-                  <select className="w-full px-2 py-2 bg-white rounded-lg">
-                    <option value="">Select A Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-white font-semibold mb-1">Phone Number <span className="text-white">*</span></label>
-                  <input type="tel" required className="w-full px-4 py-2 bg-white rounded-lg" />
-                </div>
-                <div>
-                  <label className="block text-white font-semibold mb-1">Email Address <span className="text-white">*</span></label>
-                  <input type="email" required className="w-full px-4 py-2 bg-white rounded-lg" />
-                </div>
-                <div>
-                  <label className="block text-white font-semibold mb-1">Message/Reason For Contact <span className="text-white">*</span></label>
-                  <textarea required className="w-full px-4 py-2 bg-white rounded-lg min-h-[80px]" />
-                </div>
-                <button type="submit" className="bg-white text-[#46A941] font-semibold px-6 py-2 rounded w-fit">Submit</button>
-              </form>
-            </div>
+            <ContactDetails className="bg-[#3E973A] text-white" />
           </div>
         </div>
         <div className="flex justify-between items-center w-full bg-[#EFEFEF] py-4 gap-10 ">

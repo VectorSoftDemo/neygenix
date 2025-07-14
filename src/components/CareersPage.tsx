@@ -5,7 +5,7 @@ import OurCulture from "./OurCulture";
 
 export default function CareersPage() {
   return (
-    <section className="  bg-cover bg-center bg-no-repeat bg-fixed h-full" >
+    <section className="  bg-cover bg-center bg-no-repeat bg-fixed min-h-screen" >
       <div className="relative">
         <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/10/WWUnew.jpg" alt="Careers" className="w-full h-full object-cover" />
         <div className="absolute top-0 left-0  h-full flex flex-col justify-center items-center w-5xl">

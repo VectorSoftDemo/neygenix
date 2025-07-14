@@ -31,21 +31,33 @@ export default function CareersPage() {
           image="	https://aeonglobalhealth.com/wp-content/uploads/2020/10/culture-of-innovation.jpg"
           title="Culture of Innovation"
           description="We believe that diverse perspectives inspire creativity and new ways to address healthcare challenges. We encourage new and innovative ideas to shape better services, processes and methodologies that enable people to lead healthier lives."
+          titleClass="bg-[#424492] text-white max-w-[400px] py-1"
+          descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
+            imageClass="w-[400px] h-[200px]"
         />
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/mutual-respect.jpg"
           title="Mutual Respect"
           description="We treat everyone with mutual trust and respect. We foster an environment that respects, understands and anticipates the needs of our customers – our customers come first. Each day at AEON is a day where people work collaboratively to improve lives."
+          titleClass="bg-[#424492] text-white max-w-[400px] py-1"
+          descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
+          imageClass="w-[400px] h-[200px]"
         />
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/integrity.jpg"
           title="Integrity"
           description="We are committed to the highest standards of quality in all areas of operations, excellence in customer relationships, and honesty and mutual respect in partnerships. We uphold our values of honesty, integrity and fairness in all our interactions. We hold ourselves accountable to the highest ethical and performance standards."
+          titleClass="bg-[#424492] text-white max-w-[400px] py-1"
+          descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
+            imageClass="w-[400px] h-[200px]"
         />
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/career-growth.jpg"
           title="Career Growth"
           description="We strive to provide careers full of challenging and rewarding work, as well as personal and professional growth. Continuous training, on-site mentoring and clearly defined development programs are a priority at AEON. Goals and objectives are clearly defined to help employees understand how they can contribute to organizational success. Managers provide consistent feedback to enable employees to manage their performance and their careers. Promotions and recognition are based on tangible results and personal effectiveness."
+          titleClass="bg-[#424492] text-white max-w-[400px] py-1"
+          descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
+          imageClass="w-[400px] h-[200px]"
         />
       </div>
       <div className="flex flex-col justify-center items-center w-full bg-[#46A941]">

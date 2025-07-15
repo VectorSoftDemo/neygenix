@@ -60,7 +60,7 @@ export default function HomePage() {
           </p>
         </div>
         <Curve innerColor="#424492" outerColor="#EFEFEF" className="rotate-180" />
-        <div className="flex justify-center items-center w-full bg-[#EFEFEF] p-8 gap-10">
+        <div className="flex 2xl:flex-row flex-col justify-center items-center w-full bg-[#EFEFEF] p-8 gap-10">
           <div className="flex flex-col justify-center items-center gap-1 p-4">
             <div className="w-[293px] h-[293px]">
               <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/pgx-1.png" alt="Toxicology Testing" className="w-full h-full" />

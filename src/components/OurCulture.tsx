@@ -20,7 +20,7 @@ export default function OurCulture({title, description }: OurCultureProps) {
                         Together, We DRIVE Success.
                     </h2>
                     <div className="flex justify-around gap-4 w-full">
-                        <div className="flex gap-1 items-center justify-around w-full">
+                        <div className="flex 2xl:flex-row flex-col gap-1 items-center justify-around w-full">
                             <div className=" flex flex-col gap-2">
                                 <img
                                     src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/diversitynew.png"

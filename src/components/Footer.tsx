@@ -2,76 +2,78 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4a4e57] text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold text-[#65bc7b] mb-4">AEON Global Health</h3>
-            <p className="text-gray-300 mb-4">
-              Leading provider of advanced medical laboratory diagnostics, specializing in 
-              pharmacogenomics testing, drug testing facilities, and COVID-19 testing services.
+    <footer className="bg-[#3a3a3a] text-white pt-10">
+      <div className="w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 pb-8">
+          {/* Logo and Mission */}
+          <div className="flex-1 w-1/2">
+            <div className="flex items-center mb-4 ">
+              {/* <img src="/globe.svg" alt="AEON Global Health Logo" className="h-14  mr-4" /> */}
+              <div>
+                <span className="block text-2xl font-bold text-[#65bc7b] leading-tight">AEON<br />GLOBAL HEALTH</span>
+                <span className="block text-sm text-gray-300 font-light">Know better. Live better.</span>
+              </div>
+            </div>
+            <p className="text-lg text-gray-200 mb-6">
+              At AEON, we believe in helping people lead healthier and improved lives. We innovate to provide you information that helps you manage your health.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#65bc7b] transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                </svg>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#65bc7b] transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                </svg>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#65bc7b] transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
+            <div className="mb-6">
+              <span className="block text-base text-gray-200 font-semibold mb-1">2225 Centennial Drive Gainesville, GA 30504</span>
+              <span className="block text-base text-gray-200">Phone: <span className="text-[#65bc7b]">678-276-8412</span></span>
+              <span className="block text-base text-gray-200">Email: <span className="text-[#65bc7b]">clientservices@aeonglobalhealth.com</span></span>
+            </div>
+            <div className="mb-6">
+              <span className="block text-sm font-semibold mb-2">FOLLOW AEON</span>
+              <div className="flex space-x-3">
+                <a href="#" className="bg-[#4267B2] hover:bg-[#365899] text-white rounded p-2 transition-colors" aria-label="Facebook">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+                </a>
+                <a href="#" className="bg-black hover:bg-gray-800 text-white rounded p-2 transition-colors" aria-label="X">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.53 6.47a.75.75 0 0 1 1.06 1.06l-4.72 4.72 4.72 4.72a.75.75 0 1 1-1.06 1.06l-4.72-4.72-4.72 4.72a.75.75 0 1 1-1.06-1.06l4.72-4.72-4.72-4.72A.75.75 0 1 1 8.09 6.47l4.72 4.72 4.72-4.72z"/></svg>
+                </a>
+                <a href="#" className="bg-[#E1306C] hover:bg-[#C13584] text-white rounded p-2 transition-colors" aria-label="Instagram">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.425 3.678 1.406 2.697 2.387 2.403 3.499 2.344 4.78 2.285 6.06 2.272 6.469 2.272 12c0 5.531.013 5.94.072 7.22.059 1.281.353 2.393 1.334 3.374.981.981 2.093 1.275 3.374 1.334 1.28.059 1.689.072 7.22.072s5.94-.013 7.22-.072c1.281-.059 2.393-.353 3.374-1.334.981-.981 1.275-2.093 1.334-3.374.059-1.28.072-1.689.072-7.22s-.013-5.94-.072-7.22c-.059-1.281-.353-2.393-1.334-3.374C21.393.425 20.281.131 19 .072 17.719.013 17.309 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+                </a>
+                <a href="#" className="bg-[#0077B5] hover:bg-[#005983] text-white rounded p-2 transition-colors" aria-label="LinkedIn">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76c.97 0 1.75.79 1.75 1.76s-.78 1.76-1.75 1.76zm15.25 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.61 2.01 3.61 4.62v5.56z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div className="mb-2">
+              <Link href="#" className="text-gray-200 hover:text-[#65bc7b] underline text-sm">AEON Notice of Privacy Practices</Link>
             </div>
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link href="/about" className="text-gray-300 hover:text-[#65bc7b] transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="text-gray-300 hover:text-[#65bc7b] transition-colors">Services</Link></li>
-              <li><Link href="/careers" className="text-gray-300 hover:text-[#65bc7b] transition-colors">Careers</Link></li>
-              <li><Link href="/blog" className="text-gray-300 hover:text-[#65bc7b] transition-colors">Blog</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <ul className="space-y-2">
-              <li className="text-gray-300">
-                <span className="block">Phone:</span>
-                <span className="text-[#65bc7b]">+1 (555) 123-4567</span>
-              </li>
-              <li className="text-gray-300">
-                <span className="block">Email:</span>
-                <span className="text-[#65bc7b]">info@aeonglobalhealth.com</span>
-              </li>
-              <li className="text-gray-300">
-                <span className="block">Address:</span>
-                <span>123 Healthcare Ave, Medical City, MC 12345</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm">
-            © 2024 AEON Global Health. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-gray-300 hover:text-[#65bc7b] text-sm transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-gray-300 hover:text-[#65bc7b] text-sm transition-colors">
-              Terms of Service
-            </Link>
+          {/* News Section (right) */}
+          <div className="flex-1 w-1/2 flex flex-col gap-6">
+            <div className='w-full'>
+              <div className="flex items-start bg-opacity-10 rounded p-4 mb-4">
+                <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/10/gravity-diagnostics-featured-image-2-177x142.jpg" alt="News" className="w-36 h-24 object-cover rounded mr-4" />
+                <div className="flex-1">
+                  <span className="block text-base font-semibold text-gray-100 mb-2">AEON Global Health Recognized as Leaders in Cancer Genomics and Receive GHP Award for Excellence in Toxicology Diagnostics</span>
+                  <span className="block text-xs text-gray-300 mb-2">GHP Announces the 2019 Biotechnology Awards Winners GAINESVILLE, GA – March 08 , 2019 – AEON Global Health Corp. (OTC QB: AGHC), a leading healthcare company was recognized as “Leaders in Cancer Genomics Diagnostics 2019” and received the “GHP Award for Excellence in Toxicology Diagnostics”.</span>
+                  <button className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-xs px-3 py-1 rounded">Read More</button>
+                </div>
+              </div>
+              <div className="flex items-start  bg-opacity-10 rounded p-4">
+                <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/10/ahs10887-1024x576-1-177x142.jpg" alt="News" className="w-36 h-24 object-cover rounded mr-4" />
+                <div className="flex-1">
+                  <span className="block text-base font-semibold text-gray-100 mb-2">Authentidate Announces Name Change To Aeon Global Health Corp</span>
+                  <span className="block text-xs text-gray-300 mb-2">New Trading Symbol “AGHC” Effective February 1, 2018 Gainesville, GA – January 31, 2018 Authentidate Holding Corp. (OTCQB: ADAT), announced today that it has completed its previously announced corporate name change to Aeon Global Health Corp.  The name change</span>
+                  <button className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-xs px-3 py-1 rounded">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center items-center bg-white bg-opacity-10 rounded p-4">
+              <span className="text-xl text-gray-500 mr-2">For all of your medical and diagnostic testing needs, be</span>
+              <span className="text-3xl font-bold text-[#2d2e83]">AeonSure</span>
+              <span className="text-xl text-gray-500 ml-1">™</span>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="bg-white text-gray-500 p-8 py-4 text-lg">
+        Copyright ©2025 AEON Global, All Rights Reserved
       </div>
     </footer>
   );

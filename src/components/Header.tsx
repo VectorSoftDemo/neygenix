@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export default function Header({setSelectedTab, selectedTab}: {setSelectedTab: (tab: {item:string, subItem:string | null}) => void, selectedTab: {item:string, subItem:string | null} }) {
+export default function   Header({setSelectedTab, selectedTab}: {setSelectedTab: (tab: {item:string, subItem:string | null}) => void, selectedTab: {item:string, subItem:string | null} }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const path = usePathname();
@@ -56,22 +56,6 @@ export default function Header({setSelectedTab, selectedTab}: {setSelectedTab: (
       value: 'careers'
     },
     {
-      name: 'Client Resources',
-      value: 'client_resources',
-      subItems: [
-        {
-          name: 'Client Information Form',
-          value: 'client_information_form'
-        },
-        {
-          name: 'Piedmont Labs Requisition Form',
-          value: 'piedmont_labs_requisition_form'
-        },
-        
-        
-      ]
-    },
-    {
       name: 'Order supplies',
       value: 'order_supplies'
     },
@@ -110,7 +94,7 @@ useEffect(() => {
             {!isMobile && <div className="flex items-center gap-4 h-full">
               {navItems.map((item) => (
                 <div key={item.value} className="relative group h-full">
-                  <button onClick={() => setSelectedTab({item:item.value, subItem:null})} className={`text-[#4a4e57] h-full flex items-center hover:text-[#65bc7b] hover:pb-1 transition-colors hover:border-t-4 hover:border-[#65bc7b] ${selectedTab.item === item.value ? 'border-t-4 border-[#65bc7b] pb-1 text-[#65bc7b]' : ''}`}>
+                  <button onClick={() => item.subItems !== undefined ? "": setSelectedTab({item:item.value, subItem:null})} className={`text-[#4a4e57] h-full flex items-center hover:text-[#65bc7b] hover:pb-1 transition-colors hover:border-t-4 hover:border-[#65bc7b] ${selectedTab.item === item.value ? 'border-t-4 border-[#65bc7b] pb-1 text-[#65bc7b]' : ''}`}>
                     {item.name}
                   </button>
                   {item.subItems && (

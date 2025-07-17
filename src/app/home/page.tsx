@@ -11,7 +11,7 @@ export default function HeroSection() {
                 We Have The TOX Advantage<sup className="text-4xl">TM</sup>
               </h1>
               <p className="text-xl max-w-xl">
-                According to the CDC, the crisis of Opioid addiction is a growing epidemic with 115 Americans dying every day from an opioid overdose. Adverse drug events (ADEs) are a serious health issue in the United States. About 82% of American adults take at least one medication while 29% take ﬁve or more. ADEs lead to 700,000 emergency room visits, 120,000 hospitalizations, and 100,000 deaths in the US each year. Moreover, this results in over $30 billion in additional spending annually.
+                The CDC reports that opioid dependency represents an escalating health crisis with 115 Americans perishing daily from overdose incidents. Drug-related adverse reactions (ADEs) constitute a significant healthcare concern in the United States. Approximately 82% of American adults consume at least one pharmaceutical while 29% utilize five or more medications. ADEs result in 700,000 emergency department encounters, 120,000 hospital admissions, and 100,000 fatalities annually in the US. Furthermore, this generates over $30 billion in excess healthcare expenditures yearly.
               </p>
               <button className="bg-[#46A941] text-white px-8 py-3 rounded-3xl font-semibold hover:bg-green-600 transition-colors w-fit">
                 Learn More
@@ -25,7 +25,7 @@ export default function HeroSection() {
               Who Can Benefit From Toxicology Testing?
             </h2>
             <p className="2xl:text-xl sm:text-sm text-gray-600 mb-8 max-w-7xl">
-              <b>Toxicology testing</b> provides critical information and knowledge that can be used by regulatory agencies and healthcare professionals to put policies in place and administer treatment that limits exposures to substances, reducing the likelihood of adverse drug events and negative health outcomes.
+              <b>Toxicology examination</b> delivers vital information and insights that regulatory authorities and medical professionals can utilize to establish guidelines and provide care that restricts substance exposure, diminishing the probability of adverse drug reactions and harmful health consequences.
             </p>
             <div className="flex flex-col justify-center items-center w-full">
               <img
@@ -42,16 +42,16 @@ export default function HeroSection() {
           </div>
           <div className="flex flex-col justify-center items-center text-center bg-[#424492] text-white p-8">
             <h4 className="2xl:text-2xl sm:text-xl  mb-6 max-w-7xl font-bold">
-              Every single day, we provide information that changes lives. We ensure that we deliver this information in the quickest, most accurate, and most useful way possible.  Lives depend on it.
+              Each and every day, we supply information that transforms lives. We guarantee that we transmit this knowledge in the swiftest, most precise, and most beneficial manner achievable. Lives rely on it.
             </h4>
             <p className="2xl:text-xl sm:text-sm  mb-8 max-w-7xl">
-              We want to inspire and empower you to make informed health decisions and lead better lives. With fresh eyes, we seek out new ways to meet your needs, through innovative products and services, insightful advice and a positive and caring attitude.
+              We aim to motivate and enable you to make well-informed health choices and experience superior lives. With renewed perspectives, we discover innovative approaches to satisfy your requirements, through groundbreaking products and services, valuable guidance and a supportive and compassionate mindset.
             </p>
             <p className="2xl:text-xl sm:text-sm  mb-8 max-w-7xl">
-              We want to inspire and empower you to make informed health decisions and lead better lives. With fresh eyes, we seek out new ways to meet your needs, through innovative products and services, insightful advice and a positive and caring attitude.
+              We aim to motivate and enable you to make well-informed health choices and experience superior lives. With renewed perspectives, we discover innovative approaches to satisfy your requirements, through groundbreaking products and services, valuable guidance and a supportive and compassionate mindset.
             </p>
             <p className="2xl:text-xl sm:text-sm  mb-8 max-w-7xl">
-              We deliver information. We deliver insight. We deliver power to physicians. Know Better. Live Better.
+              We provide knowledge. We furnish understanding. We supply authority to medical professionals. Learn More. Experience Enhanced Living.
             </p>
           </div>
           <div className="w-full h-15 bg-[#424492] relative overflow-hidden rotate-180" style={{ marginTop: '-1px' }}>
@@ -87,7 +87,7 @@ export default function HeroSection() {
                   Our Culture
                 </h2>
                 <p className="text-[#292929] max-w-7xl text-xl ">
-                  We understand that our work impacts the lives of people. Each day at AEON is filled with energy, enthusiasm and passion – our work is meaningful and our people understand that the role they play is making a difference in someone else’s life.
+                  We recognize that our efforts influence people's lives. Each day at Nuegenix overflows with vitality, dedication and purpose – our work holds meaning and our team understands that their contributions create significant impact in another person's existence.
                 </p>
               </div>
               <div className="flex flex-col gap-1">
@@ -228,14 +228,14 @@ export default function HeroSection() {
             <div className="flex flex-col gap-4 justify-center w-7xl pr-8">
               <h1 className="2xl:text-4xl sm:text-2xl font-bold">Client Testimonials</h1>
               <div className="text-lg bg-white p-4 ">
-                <p>Aeon is one of the most innovative agencies which understands the whole spectrum of the present Health Care System. Aeon has proven their strong footing in the industry with insistence on quality care.</p>
+                <p>Nuegenix represents one of the most progressive organizations that comprehends the complete range of the current Healthcare System. Nuegenix has demonstrated their solid foundation in the industry through their emphasis on excellence in care.</p>
               </div>
               <p className="text-lg"><b>Mustafa Chagani</b>, CEO of The Texas International Institute of Health Professions</p>
             </div>
           </div>
           <div className="flex flex-col gap-4 justify-center items-center bg-[#424492] p-8">
             <p className="2xl:text-4xl sm:text-2xl font-bold text-[#46A941]">Work With Us</p>
-            <p className="text-3xl text-white">Come and experience a culture rich in diversity and passion.</p>
+            <p className="text-3xl text-white">Join us and explore a workplace abundant in diversity and dedication.</p>
           </div>
           <div className="w-full h-15 bg-[#46A941] relative overflow-hidden " style={{ marginTop: '-1px' }}>
             <div
@@ -246,7 +246,7 @@ export default function HeroSection() {
           <div className="flex gap-4 justify-center items-center bg-[#46A941] p-8 pb-20">
             <div className="flex flex-col gap-4 w-2xl p-4">
               <h1 className="2xl:text-4xl sm:text-2xl font-bold text-white">Career Opportunities</h1>
-              <p className="text-xl text-white">Our business encompasses many different functions. You can explore opportunities in laboratory operations and management, research, information technology, finance and administration, sales and account management, marketing and brand management, human resources and more.</p>
+              <p className="text-xl text-white">Our enterprise spans numerous diverse functions. You can discover possibilities in laboratory operations and oversight, research initiatives, information technology, finance and administration, sales and client management, marketing and brand development, human resources and additional areas.</p>
               <button className="bg-[#424492] text-white px-4 py-2 rounded-2xl font-semibold w-fit text-sm">
                 APPLY NOW
               </button>

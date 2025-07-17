@@ -13,24 +13,24 @@ export default function CareersPage() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center p-8 pb-10 bg-[#46A941] text-white">
-        <p className="text-2xl font-semibold">Come and experience a culture rich in diversity and passion.</p>
+        <p className="text-2xl font-semibold">Join us and discover a workplace abundant in diversity and dedication.</p>
       </div>
       <Curve innerColor="#46A941" outerColor="#EFEFEF" className="rotate-180" />
       <OurCulture
         title="Career Opportunities"
-        description="We understand that our work impacts the lives of people. Each day at AEON is filled with energy, enthusiasm and passion – our work is meaningful and our people understand that the role they play is making a difference in someone else’s life."
+        description="We acknowledge that our efforts significantly influence individual lives. Each day at Nuegenix is powered by zeal and commitment – our endeavors hold purpose, and our colleagues realize that their involvement creates substantial impact in another person's existence."
       />
       <CareerOpportunities
         image="https://aeonglobalhealth.com/wp-content/uploads/2020/09/Career-1-400x400.jpg"
         title="Career Opportunities"
-        description="Our business encompasses many different functions. You can explore opportunities in laboratory operations and management, research, information technology, finance and administration, sales and account management, marketing and brand management, human resources and more."
+        description="Our enterprise encompasses varied operational sectors. You may explore possibilities within laboratory functions and supervision, investigative projects, technological systems, financial and administrative services, sales and client relations, promotional and brand oversight, personnel management, and countless additional divisions."
         buttonClass="bg-[#46A941] border-2 border-white "
       />
       <div className="grid grid-cols-[auto_auto] justify-center items-start gap-10 p-8">
         <CareerItems
           image="	https://aeonglobalhealth.com/wp-content/uploads/2020/10/culture-of-innovation.jpg"
           title="Culture of Innovation"
-          description="We believe that diverse perspectives inspire creativity and new ways to address healthcare challenges. We encourage new and innovative ideas to shape better services, processes and methodologies that enable people to lead healthier lives."
+          description="We strongly advocate that varied viewpoints ignite inventiveness and pioneering solutions to medical obstacles. We enthusiastically support novel and revolutionary concepts to create improved services, procedures, and techniques that enable individuals to pursue healthier lifestyles."
           titleClass="bg-[#424492] text-white max-w-[400px] py-1"
           descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
             imageClass="w-[400px] h-[200px]"
@@ -38,7 +38,7 @@ export default function CareersPage() {
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/mutual-respect.jpg"
           title="Mutual Respect"
-          description="We treat everyone with mutual trust and respect. We foster an environment that respects, understands and anticipates the needs of our customers – our customers come first. Each day at AEON is a day where people work collaboratively to improve lives."
+          description="We approach everyone with reciprocal confidence and regard. We nurture an atmosphere that honors, comprehends, and foresees our clients' requirements – our clients remain our foremost concern. Each day at Nuegenix presents a chance for our workforce to cooperate purposefully in enhancing lives."
           titleClass="bg-[#424492] text-white max-w-[400px] py-1"
           descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
           imageClass="w-[400px] h-[200px]"
@@ -46,7 +46,7 @@ export default function CareersPage() {
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/integrity.jpg"
           title="Integrity"
-          description="We are committed to the highest standards of quality in all areas of operations, excellence in customer relationships, and honesty and mutual respect in partnerships. We uphold our values of honesty, integrity and fairness in all our interactions. We hold ourselves accountable to the highest ethical and performance standards."
+          description="We sustain steadfast dedication to exceptional quality benchmarks throughout all functional domains, distinction in client associations, and transparency with reciprocal regard in alliances. We preserve our fundamental principles of truthfulness, authenticity, and justice across all engagements. We persistently maintain accountability to the supreme ethical and operational criteria."
           titleClass="bg-[#424492] text-white max-w-[400px] py-1"
           descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
             imageClass="w-[400px] h-[200px]"
@@ -54,7 +54,7 @@ export default function CareersPage() {
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/career-growth.jpg"
           title="Career Growth"
-          description="We strive to provide careers full of challenging and rewarding work, as well as personal and professional growth. Continuous training, on-site mentoring and clearly defined development programs are a priority at AEON. Goals and objectives are clearly defined to help employees understand how they can contribute to organizational success. Managers provide consistent feedback to enable employees to manage their performance and their careers. Promotions and recognition are based on tangible results and personal effectiveness."
+          description="We strive to offer vocations abundant with stimulating and fulfilling work prospects, coupled with individual and occupational advancement. Ongoing education, workplace guidance, and distinctly structured progression programs stay paramount at Nuegenix. Targets and aims are meticulously detailed to assist staff in comprehending their role in organizational achievement. Supervisors provide regular input to empower personnel to successfully handle their productivity and career progression. Advancement and acknowledgment are granted according to concrete outcomes and individual efficiency."
           titleClass="bg-[#424492] text-white max-w-[400px] py-1"
           descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
           imageClass="w-[400px] h-[200px]"
@@ -64,11 +64,11 @@ export default function CareersPage() {
         <div className="flex flex-col gap-10 justify-center items-center p-8 pb-10  text-white max-w-7xl">
           <div className="flex flex-col justify-center items-center gap-4 text-center">
             <h1 className="text-4xl font-semibold">Apply Now</h1>
-            <p className="text-xl font-semibold">Applicants should send a resume and cover letter outlining how they meet the specific requirements of the position to hr@aeonglobalhealth.com. While we sincerely appreciate all applications, only shortlisted candidates will be contacted.</p>
+            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@aeonglobalhealth.com. Though we sincerely value every submission, solely selected applicants will receive communication.</p>
           </div>
           <div className="flex flex-col justify-center items-center gap-4 text-center">
-            <h1 className="text-4xl font-semibold">Apply Now to Intern at AEON</h1>
-            <p className="text-xl font-semibold">Applicants should send a resume and cover letter outlining how they meet the specific requirements of the position to hr@aeonglobalhealth.com.</p>
+            <h1 className="text-4xl font-semibold">Apply Now to Intern at Nuegenix</h1>
+            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@aeonglobalhealth.com.</p>
           </div>
         </div>
       </div>

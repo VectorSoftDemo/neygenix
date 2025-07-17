@@ -4,32 +4,32 @@ export default function Blogs() {
         {
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2025/02/How-Toxicology-Testing-Supports-Substance-Abuse-Recovery-Blog-200x113.jpg',
             title: 'How Toxicology Testing Supports Substance Abuse Recovery',
-            desc: 'Substance abuse is a serious health issue that affects millions of people worldwide. Overcoming addiction is not easy—it requires medical care...',
+            desc: 'Substance dependency represents a critical health concern impacting millions globally. Conquering addiction proves challenging—it demands medical intervention...',
         },
         {
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/12/Laboratory-Risks-that-are-commonly-neglected-200x113.jpg',
             title: 'Laboratory Risks that are commonly neglected',
-            desc: 'many laboratories provide more significant hazards and risks than the typical workplace. Therefore, you and the entire team must be aware of every laboratory hazard,',
+            desc: 'numerous laboratories present greater dangers and threats than standard work environments. Consequently, you and the complete team must recognize each laboratory peril,',
         },
         {
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2025/01/Toxicology-testing-how-it-works-and-what-it-detects.-_-Blog-Cover-200x113.jpg',
             title: 'Toxicology testing: how it works and what it detects.',
-            desc: 'Toxicology testing refers to the analysis of biological samples (like urine, blood, or hair) to detect the presence of harmful substances.',
+            desc: 'Toxicology examination involves the evaluation of biological specimens (such as urine, blood, or hair) to identify the existence of damaging compounds.',
         },
         {
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/10/How-Medical-Laboratories-can-benefit-from-Telehealth-200x113.jpg',
             title: 'How Medical Laboratories can benefit from Telehealth',
-            desc: "medical laboratories' managers attempting to discover innovative means of collecting specimens for testing that support Telehealth physicians. As a result, traditional doctors may indeed get replaced by Telehealth.",
+            desc: "medical laboratory supervisors endeavoring to identify creative methods of gathering samples for analysis that assist Telehealth practitioners. Consequently, conventional physicians might potentially be substituted by Telehealth.",
         },
         {
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/12/Laboratory-Risks-that-are-commonly-neglected-200x113.jpg',
             title: 'Top Emerging Lab Trends 2025',
-            desc: "The trends in the laboratory change along with how science and technology are developing. We'll discuss the top laboratory trends",
+            desc: "The patterns in laboratory settings evolve alongside scientific and technological advancement. We'll explore the leading laboratory movements",
         },
         {
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/10/Different-types-of-genetic-testing-AEON-GLOBAL-HEALTH-200x113.jpg',
             title: 'Different types of genetic testing',
-            desc: "A person's DNA, the chemical database that holds the instructions for how their body should function, is analyzed during genetic",
+            desc: "An individual's DNA, the molecular blueprint containing directives for bodily operations, undergoes examination during genetic",
         },
     ];
     const extraPosts = [
@@ -38,28 +38,28 @@ export default function Blogs() {
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/09/The-Influence-of-Telehealth-in-the-Modern-Era-AEON-GLOBAL-HEALTH-320x202.jpg',
             title: 'The Influence of Telehealth in the Modern Era',
             published: 'September 14, 2022',
-            desc: 'Since the early 20th century, the idea of Telehealth has been present and has been used in many different medical subfields. On the other hand, since the',
+            desc: 'From the beginning of the 20th century, the concept of Telehealth has existed and been utilized across various medical specialties. Conversely, since the',
         },
         {
             date: { day: '16', month: '08', year: '2022' },
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/09/The-Influence-of-Telehealth-in-the-Modern-Era-AEON-GLOBAL-HEALTH-320x202.jpg',
             title: 'Ultimate Guide for Medical Laboratory Technician',
             published: 'August 16, 2022',
-            desc: 'Technicians in medical laboratories are the individuals who carry out the day-to-day operations of a medical laboratory. By conducting examinations on samples of tissue, blood, and other',
+            desc: 'Laboratory technicians represent the professionals who execute daily functions within medical facilities. Through performing analyses on tissue specimens, blood samples, and additional',
         },
         {
             date: { day: '28', month: '07', year: '2022' },
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/09/The-Influence-of-Telehealth-in-the-Modern-Era-AEON-GLOBAL-HEALTH-320x202.jpg',
             title: 'Five Traits of a Great Medical Laboratory Scientist',
             published: 'July 28, 2022',
-            desc: 'The discipline of laboratory science is an important one in the realm of healthcare that affects the well-being of every person. As the need for growth in',
+            desc: 'The field of laboratory science represents a crucial domain within healthcare that influences the wellness of each individual. As the demand for expansion in',
         },
         {
             date: { day: '20', month: '07', year: '2022' },
             image: 'https://aeonglobalhealth.com/wp-content/uploads/2022/09/The-Influence-of-Telehealth-in-the-Modern-Era-AEON-GLOBAL-HEALTH-320x202.jpg',
             title: 'Difference between medical and clinical laboratory scientists',
             published: 'July 20, 2022',
-            desc: 'Professionals with a high level of education and training who work in laboratories include medical technologists and clinical laboratory scientists. They are accountable for carrying out detailed',
+            desc: 'Highly educated and trained professionals operating in laboratory settings encompass medical technologists and clinical laboratory scientists. They remain responsible for executing comprehensive',
         },
     ];
     return (

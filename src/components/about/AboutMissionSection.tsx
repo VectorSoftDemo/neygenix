@@ -7,10 +7,10 @@ const AboutMissionSection = () => (
             <div className="text-center flex flex-col justify-center items-center gap-4">
                 <h2 className="text-4xl font-bold text-white">Responsible Citizenship</h2>
                 <p className="text-xl text-white leading-relaxed mt-4 max-w-6xl">
-                AEON has an enduring commitment to be a responsible business. We run our business in the right way – for the benefit of the people we serve, including patients, shareholders, employees and our communities.
+                Nuegenix maintains a steadfast dedication to ethical business practices. We conduct our operations with integrity – to serve the interests of those who rely on us, including patients, stakeholders, staff members, and the communities we support.
                 </p>
                 <p className="text-lg text-white leading-relaxed max-w-6xl">
-                As a health care company, people depend on our services to help them live healthier and better lives. That’s why responsible citizenship is integrated throughout our business.
+                As a healthcare organization, individuals rely on our services to enhance their well-being and quality of life. This is why ethical stewardship is woven into every aspect of our operations.
                 </p>
             </div>
         </div>

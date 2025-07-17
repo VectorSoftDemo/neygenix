@@ -8,22 +8,22 @@ export default function Footer() {
           {/* Logo and Mission */}
           <div className="flex-1 w-1/2">
             <div className="flex items-center mb-4 ">
-              {/* <img src="/globe.svg" alt="AEON Global Health Logo" className="h-14  mr-4" /> */}
+              {/* <img src="/globe.svg" alt="Nuegenix Global Health Logo" className="h-14  mr-4" /> */}
               <div>
-                <span className="block text-2xl font-bold text-[#65bc7b] leading-tight">AEON<br />GLOBAL HEALTH</span>
-                <span className="block text-sm text-gray-300 font-light">Know better. Live better.</span>
+                <span className="block text-2xl font-bold text-[#65bc7b] leading-tight">NUEGENIX<br />GLOBAL HEALTH</span>
+                <span className="block text-sm text-gray-300 font-light">Understand more. Experience wellness.</span>
               </div>
             </div>
             <p className="text-lg text-gray-200 mb-6">
-              At AEON, we believe in helping people lead healthier and improved lives. We innovate to provide you information that helps you manage your health.
+              At Nuegenix, we are dedicated to supporting individuals in achieving enhanced wellness and better quality of life. We create solutions to deliver insights that empower you to take control of your health journey.
             </p>
             <div className="mb-6">
               <span className="block text-base text-gray-200 font-semibold mb-1">2225 Centennial Drive Gainesville, GA 30504</span>
               <span className="block text-base text-gray-200">Phone: <span className="text-[#65bc7b]">678-276-8412</span></span>
-              <span className="block text-base text-gray-200">Email: <span className="text-[#65bc7b]">clientservices@aeonglobalhealth.com</span></span>
+              <span className="block text-base text-gray-200">Email: <span className="text-[#65bc7b]">clientservices@nuegenix.com</span></span>
             </div>
             <div className="mb-6">
-              <span className="block text-sm font-semibold mb-2">FOLLOW AEON</span>
+              <span className="block text-sm font-semibold mb-2">CONNECT WITH NUEGENIX</span>
               <div className="flex space-x-3">
                 <a href="#" className="bg-[#4267B2] hover:bg-[#365899] text-white rounded p-2 transition-colors" aria-label="Facebook">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="mb-2">
-              <Link href="#" className="text-gray-200 hover:text-[#65bc7b] underline text-sm">AEON Notice of Privacy Practices</Link>
+              <Link href="#" className="text-gray-200 hover:text-[#65bc7b] underline text-sm">Nuegenix Notice of Privacy Practices</Link>
             </div>
           </div>
 
@@ -50,30 +50,30 @@ export default function Footer() {
               <div className="flex items-start bg-opacity-10 rounded p-4 mb-4">
                 <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/10/gravity-diagnostics-featured-image-2-177x142.jpg" alt="News" className="w-36 h-24 object-cover rounded mr-4" />
                 <div className="flex-1">
-                  <span className="block text-base font-semibold text-gray-100 mb-2">AEON Global Health Recognized as Leaders in Cancer Genomics and Receive GHP Award for Excellence in Toxicology Diagnostics</span>
-                  <span className="block text-xs text-gray-300 mb-2">GHP Announces the 2019 Biotechnology Awards Winners GAINESVILLE, GA – March 08 , 2019 – AEON Global Health Corp. (OTC QB: AGHC), a leading healthcare company was recognized as “Leaders in Cancer Genomics Diagnostics 2019” and received the “GHP Award for Excellence in Toxicology Diagnostics”.</span>
-                  <button className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-xs px-3 py-1 rounded">Read More</button>
+                  <span className="block text-base font-semibold text-gray-100 mb-2">Nuegenix Global Health Acknowledged as Pioneers in Cancer Genomics and Receives GHP Award for Outstanding Performance in Toxicology Diagnostics</span>
+                  <span className="block text-xs text-gray-300 mb-2">GHP Reveals the 2019 Biotechnology Awards Recipients GAINESVILLE, GA – March 08, 2019 – Nuegenix Global Health Corp. (OTC QB: AGHC), a premier healthcare organization was acknowledged as "Pioneers in Cancer Genomics Diagnostics 2019" and obtained the "GHP Award for Outstanding Performance in Toxicology Diagnostics".</span>
+                  <button className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-xs px-3 py-1 rounded">Learn More</button>
                 </div>
               </div>
               <div className="flex items-start  bg-opacity-10 rounded p-4">
                 <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/10/ahs10887-1024x576-1-177x142.jpg" alt="News" className="w-36 h-24 object-cover rounded mr-4" />
                 <div className="flex-1">
-                  <span className="block text-base font-semibold text-gray-100 mb-2">Authentidate Announces Name Change To Aeon Global Health Corp</span>
-                  <span className="block text-xs text-gray-300 mb-2">New Trading Symbol “AGHC” Effective February 1, 2018 Gainesville, GA – January 31, 2018 Authentidate Holding Corp. (OTCQB: ADAT), announced today that it has completed its previously announced corporate name change to Aeon Global Health Corp.  The name change</span>
-                  <button className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-xs px-3 py-1 rounded">Read More</button>
+                  <span className="block text-base font-semibold text-gray-100 mb-2">Authentidate Declares Corporate Rebranding To Nuegenix Global Health Corp</span>
+                  <span className="block text-xs text-gray-300 mb-2">Updated Trading Symbol "AGHC" Active February 1, 2018 Gainesville, GA – January 31, 2018 Authentidate Holding Corp. (OTCQB: ADAT), disclosed today that it has finalized its previously announced corporate rebranding to Nuegenix Global Health Corp. The rebranding</span>
+                  <button className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-xs px-3 py-1 rounded">Learn More</button>
                 </div>
               </div>
             </div>
             <div className="flex justify-center items-center bg-white bg-opacity-10 rounded p-4">
-              <span className="text-xl text-gray-500 mr-2">For all of your medical and diagnostic testing needs, be</span>
-              <span className="text-3xl font-bold text-[#2d2e83]">AeonSure</span>
+              <span className="text-xl text-gray-500 mr-2">For all of your medical and diagnostic testing requirements, trust</span>
+              <span className="text-3xl font-bold text-[#2d2e83]">NuegenixSure</span>
               <span className="text-xl text-gray-500 ml-1">™</span>
             </div>
           </div>
         </div>
       </div>
       <div className="bg-white text-gray-500 p-8 py-4 text-lg">
-        Copyright ©2025 AEON Global, All Rights Reserved
+        Copyright ©2025 Nuegenix Global, All Rights Reserved
       </div>
     </footer>
   );

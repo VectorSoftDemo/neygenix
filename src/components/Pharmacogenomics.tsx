@@ -13,13 +13,13 @@ export default function Pharmacogenomics() {
             <div className="flex  pl-8  justify-between items-center ">
                 <div className="flex flex-col gap-4">
                     <p className="text-lg font-semibold max-w-[90%]">
-                        Adverse drug events (ADEs) are a serious health issue in the United States. About 82% of American adults take at least one medication while 29% take ﬁve or more. ADEs lead to 700,000 emergency room visits, 120,000 hospitalizations and 100,000 deaths in the US each year. This results in over $30 billion in additional spend annually. 1
+                        Drug-related adverse reactions (ADEs) constitute a significant healthcare concern in the United States. Approximately 82% of American adults consume at least one pharmaceutical while 29% utilize five or more medications. ADEs result in 700,000 emergency department encounters, 120,000 hospital admissions and 100,000 fatalities annually in the US. This generates over $30 billion in excess healthcare expenditures yearly. 1
                     </p>
                     <p className="text-lg font-semibold max-w-[90%]">
-                        Pharmacogenomics studies have shown that more than 50% of the patient population are dosing ineﬀectively due at least in part to a genetic mismatch between the patient’s metabolism and the medication. Recent genetic research has helped to create a better understanding of this mismatch by explaining the signiﬁcance of genetics in drug metabolism.
+                        Pharmacogenomics investigations have demonstrated that over 50% of the patient population receive ineffective dosing due partly to genetic incompatibility between the patient's metabolism and the medication. Current genetic research has assisted in developing superior comprehension of this incompatibility by clarifying the importance of genetics in drug metabolism.
                     </p>
                     <p className="text-lg font-semibold max-w-[90%]">
-                        This information about a patient’s genetic makeup, coupled with their lifestyle behavior and other risk factors, enhances the physician’s ability to provide personalized medical care and treatment to each patient.
+                        This knowledge regarding a patient's genetic composition, combined with their lifestyle patterns and additional risk elements, improves the physician's capacity to deliver individualized medical care and treatment to each patient.
                     </p>
                 </div>
                 <div className="flex justify-center items-center">
@@ -34,10 +34,10 @@ export default function Pharmacogenomics() {
                     Pharmacogenomics Testing
                 </h1>
                 <p className="text-lg font-semibold max-w-[50%]">
-                    At AEON, we are committed to increasing awareness, understanding, and clinical use of pharmacogenomics testing. Our 17 gene PGX Advantage testing proﬁle provides information about the connection between a patient’s unique genetic makeup and their response to certain cardiology, pain and psychiatry medications.
+                    At Nuegenix, we are dedicated to enhancing awareness, comprehension, and clinical application of pharmacogenomics testing. Our 17 gene PGX Advantage testing profile delivers information regarding the relationship between a patient's distinct genetic composition and their response to specific cardiology, pain and psychiatry medications.
                 </p>
                 <p className="text-lg font-semibold max-w-[50%]">
-                    We understand that as physicians, you must continually seek out ways to enhance the care you provide to each of your patients. Our pharmacogenomics tests provide information that enable you to oﬀer personalized care and tailored medication to meet your patient’s unique needs with positive outcomes.
+                    We recognize that as physicians, you must consistently discover methods to improve the care you deliver to each of your patients. Our pharmacogenomics examinations supply information that empowers you to provide individualized care and customized medication to satisfy your patient's distinctive requirements with favorable results.
                 </p>
             </div>
             <Curve innerColor="#46A941" outerColor="#EFEFEF" className="rotate-180" />
@@ -56,7 +56,7 @@ export default function Pharmacogenomics() {
                 <h1 className="text-4xl font-bold text-center text-[#424492] w-full max-w-[60%]">References</h1>
                 <ol type="1" className="max-w-[58%] text-lg flex flex-col gap-4 " style={{ listStyleType: 'decimal' }}>
                     <li>
-                        <p>The Essentials of Diagnostics whitepaper. DX Insights. January 2012.National Center for Complementary and Integrative Health (NCCIH) and the Centers for Disease Control and Prevention (CDC), based on data from a special supplement—on use of complementary health approaches—to the 2012 National Health Interview Survey (NHIS).</p>
+                        <p>The Essentials of Diagnostics whitepaper. DX Insights. January 2012. National Center for Complementary and Integrative Health (NCCIH) and the Centers for Disease Control and Prevention (CDC), based on data from a special supplement—on use of complementary health approaches—to the 2012 National Health Interview Survey (NHIS).</p>
                     </li>
                 </ol>
             </div>

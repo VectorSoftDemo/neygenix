@@ -16,7 +16,7 @@ export default function HomePage() {
               We Have The TOX Advantage<sup className="text-4xl">TM</sup>
             </h1>
             <p className="text-xl max-w-xl">
-              According to the CDC, the crisis of Opioid addiction is a growing epidemic with 115 Americans dying every day from an opioid overdose. Adverse drug events (ADEs) are a serious health issue in the United States. About 82% of American adults take at least one medication while 29% take ﬁve or more. ADEs lead to 700,000 emergency room visits, 120,000 hospitalizations, and 100,000 deaths in the US each year. Moreover, this results in over $30 billion in additional spending annually.
+              The CDC indicates that opioid addiction has emerged as an extensive health emergency, taking the lives of 115 Americans each day through overdose events. Drug-related adverse effects (ADEs) constitute a significant healthcare obstacle nationally. Roughly 82% of American adults utilize at least one medicinal compound, with 29% employing five or more treatments concurrently. These harmful reactions cause 700,000 emergency room encounters, 120,000 hospitalization cases, and 100,000 deaths yearly throughout the United States. Furthermore, these occurrences produce over $30 billion in additional healthcare costs annually.
             </p>
             <button className="bg-[#46A941] text-white px-8 py-3 rounded-3xl font-semibold hover:bg-green-600 transition-colors w-fit">
               Learn More
@@ -30,7 +30,7 @@ export default function HomePage() {
             Who Can Benefit From Toxicology Testing?
           </h2>
           <p className="2xl:text-xl sm:text-sm text-gray-600 mb-8 max-w-7xl">
-            <b>Toxicology testing</b> provides critical information and knowledge that can be used by regulatory agencies and healthcare professionals to put policies in place and administer treatment that limits exposures to substances, reducing the likelihood of adverse drug events and negative health outcomes.
+            <b>Toxicology examination</b> provides crucial information and knowledge that empowers regulatory agencies and healthcare professionals to develop guidelines and deliver treatment that reduces substance exposure dangers, lowering the likelihood of drug-related complications and detrimental health outcomes.
           </p>
           <div className="flex flex-col justify-center items-center w-full">
             <img
@@ -47,16 +47,16 @@ export default function HomePage() {
         </div>
         <div className="flex flex-col justify-center items-center text-center bg-[#424492] text-white p-8">
           <h4 className="2xl:text-2xl sm:text-xl  mb-6 max-w-7xl font-bold">
-            Every single day, we provide information that changes lives. We ensure that we deliver this information in the quickest, most accurate, and most useful way possible.  Lives depend on it.
+            Each day, we provide essential information that changes lives. We ensure the transmission of this knowledge through the swiftest, most accurate, and most advantageous approaches possible. Human existence depends on this balance.
           </h4>
           <p className="2xl:text-xl sm:text-sm  mb-8 max-w-7xl">
-            We want to inspire and empower you to make informed health decisions and lead better lives. With fresh eyes, we seek out new ways to meet your needs, through innovative products and services, insightful advice and a positive and caring attitude.
+            Our objective is to inspire and empower you to make informed medical decisions and attain improved wellness. Through creative viewpoints, we uncover innovative methods to meet your needs via advanced solutions and services, professional counsel, and a caring, understanding approach.
           </p>
           <p className="2xl:text-xl sm:text-sm  mb-8 max-w-7xl">
-            We want to inspire and empower you to make informed health decisions and lead better lives. With fresh eyes, we seek out new ways to meet your needs, through innovative products and services, insightful advice and a positive and caring attitude.
+            Our purpose is to motivate and enhance your capacity to make well-informed health decisions and enjoy better life quality. Utilizing innovative insight, we recognize new approaches to satisfy your needs through revolutionary products and services, expert advice, and a positive, supportive attitude.
           </p>
           <p className="2xl:text-xl sm:text-sm  mb-8 max-w-7xl">
-            We deliver information. We deliver insight. We deliver power to physicians. Know Better. Live Better.
+            We deliver information. We furnish comprehension. We arm medical professionals with insights. Achieve Superior Awareness. Enjoy Elevated Living.
           </p>
         </div>
         <Curve innerColor="#424492" outerColor="#EFEFEF" className="rotate-180" />
@@ -82,7 +82,7 @@ export default function HomePage() {
         </div>
         <OurCulture
           title="Our Culture"
-          description="We understand that our work impacts the lives of people. Each day at AEON is filled with energy, enthusiasm and passion – our work is meaningful and our people understand that the role they play is making a difference in someone else’s life." />
+          description="We acknowledge that our endeavors affect human lives directly. Every day at Nuegenix overflows with energy, commitment, and meaning – our contributions possess importance, and our team members understand that their individual positions generate significant impact in others' lives." />
         <Curve innerColor="#46A941" outerColor="#EFEFEF" />
         <div className="flex justify-center items-center w-full bg-[#46A941] p-8 gap-10 pb-20">
           <div className="flex flex-col gap-4">
@@ -138,20 +138,20 @@ export default function HomePage() {
           <div className="flex flex-col gap-4 justify-center w-7xl pr-8">
             <h1 className="2xl:text-4xl sm:text-2xl font-bold">Client Testimonials</h1>
             <div className="text-lg bg-white p-4 ">
-              <p>Aeon is one of the most innovative agencies which understands the whole spectrum of the present Health Care System. Aeon has proven their strong footing in the industry with insistence on quality care.</p>
+              <p>Nuegenix represents one of the most progressive organizations that understands the full scope of today's Healthcare System. Nuegenix has shown their strong foundation in the field through their dedication to excellence in patient care.</p>
             </div>
             <p className="text-lg"><b>Mustafa Chagani</b>, CEO of The Texas International Institute of Health Professions</p>
           </div>
         </div>
         <div className="flex flex-col gap-4 justify-center items-center bg-[#424492] p-8">
           <p className="2xl:text-4xl sm:text-2xl font-bold text-[#46A941]">Work With Us</p>
-          <p className="text-3xl text-white">Come and experience a culture rich in diversity and passion.</p>
+          <p className="text-3xl text-white">Unite with us and explore a professional environment rich in diversity and commitment.</p>
         </div>
         <Curve innerColor="#46A941" outerColor="#424492" />
         <CareerOpportunities
           image="	https://aeonglobalhealth.com/wp-content/uploads/2022/06/aeon-ijmage-02.png"
           title="Career Opportunities"
-          description="Our business encompasses many different functions. You can explore opportunities in laboratory operations and management, research, information technology, finance and administration, sales and account management, marketing and brand management, human resources and more."
+          description="Our enterprise encompasses various distinct functions. You might find opportunities in laboratory operations and supervision, scientific investigation, information technology, financial and administrative support, sales and customer relations, marketing and brand management, personnel services, and other departments."
         />
       </div>
     </section>

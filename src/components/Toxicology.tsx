@@ -13,7 +13,7 @@ export default function Toxicology() {
             </div>
             <div className="flex  pl-8  justify-between items-center ">
                 <p className="text-lg font-semibold max-w-[90%]">
-                    According to the CDC, the crisis of Opioid addiction is a growing epidemic with 115 Americans dying every day from an opioid overdose. Adverse drug events (ADEs) are a serious health issue in the United States. About 82% of American adults take at least one medication while 29% take ﬁve or more. ADEs lead to 700,000 emergency room visits, 120,000 hospitalizations and 100,000 deaths in the US each year. Moreover, this results in over $30 billion in additional spend annually.1
+                    The CDC reports that opioid dependency represents an escalating health crisis with 115 Americans perishing daily from overdose incidents. Drug-related adverse reactions (ADEs) constitute a significant healthcare concern in the United States. Approximately 82% of American adults consume at least one pharmaceutical while 29% utilize five or more medications. ADEs result in 700,000 emergency department encounters, 120,000 hospital admissions and 100,000 fatalities annually in the US. Furthermore, this generates over $30 billion in excess healthcare expenditures yearly.1
                 </p>
                 <div className="flex justify-center items-center">
                     <img src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/Layer-20.png" alt="" className="w-30 h-[300px]" />
@@ -27,10 +27,10 @@ export default function Toxicology() {
                     Toxicology Testing
                 </h1>
                 <p className="text-lg font-semibold max-w-[50%]">
-                    At AEON, we are committed to providing physicians of all specialties with the cutting-edge tools necessary to monitor adherence, diversion and eﬃcacy. AEON’s toxicology testing, TOX Advantage, provides information about medication and other substances in a patient’s system using either urine or oral ﬂuid samples. This information allows physicians to monitor compliance, guides their ongoing treatment of a patient and helps to ensure the safe use of prescriptions.
+                    At Nuegenix, we are dedicated to supplying physicians across all specialties with the advanced tools required to track adherence, diversion and effectiveness. Nuegenix's toxicology examination, TOX Advantage, delivers information regarding medication and other substances in a patient's system utilizing either urine or oral fluid specimens. This information enables physicians to observe compliance, directs their continuous treatment of a patient and assists in ensuring the secure use of prescriptions.
                 </p>
                 <p className="text-lg font-semibold max-w-[50%]">
-                    We understand that as physicians, you must continually seek out ways to enhance the care you provide to each of your patients. Our toxicology tests provide information that enable you to oﬀer more personalized care and tailored medication recommendations to meet your patient’s needs with positive outcomes.
+                    We recognize that as physicians, you must consistently discover methods to improve the care you deliver to each of your patients. Our toxicology examinations supply information that empowers you to provide more individualized care and customized medication suggestions to satisfy your patient's requirements with favorable results.
                 </p>
             </div>
             <Curve innerColor="#46A941" outerColor="#EFEFEF" className="rotate-180" />

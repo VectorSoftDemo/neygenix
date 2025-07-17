@@ -15,7 +15,7 @@ const AboutHeroSection = () => (
                     About Us
                 </h1>
                 <p className="text-xl md:text-2xl  text-left drop-shadow-lg max-w-md">
-                    We run our business in the right way – for the benefit of the people we serve, including patients, shareholders, employees and our communities.
+                    We conduct our operations ethically and responsibly – to serve the interests of those who depend on us, including patients, stakeholders, staff members, and the communities we support.
                 </p>
             </div>
         </div>

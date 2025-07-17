@@ -82,7 +82,7 @@ export default function HomePage() {
         </div>
         <OurCulture
           title="Our Culture"
-          description="We acknowledge that our endeavors affect human lives directly. Every day at Nuegenix overflows with energy, commitment, and meaning – our contributions possess importance, and our team members understand that their individual positions generate significant impact in others' lives." />
+          description="We acknowledge that our endeavors affect human lives directly. Every day at Neugenix overflows with energy, commitment, and meaning – our contributions possess importance, and our team members understand that their individual positions generate significant impact in others' lives." />
         <Curve innerColor="#46A941" outerColor="#EFEFEF" />
         <div className="flex justify-center items-center w-full bg-[#46A941] p-8 gap-10 pb-20">
           <div className="flex flex-col gap-4">
@@ -138,7 +138,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-4 justify-center w-7xl pr-8">
             <h1 className="2xl:text-4xl sm:text-2xl font-bold">Client Testimonials</h1>
             <div className="text-lg bg-white p-4 ">
-              <p>Nuegenix represents one of the most progressive organizations that understands the full scope of today's Healthcare System. Nuegenix has shown their strong foundation in the field through their dedication to excellence in patient care.</p>
+              <p>Neugenix represents one of the most progressive organizations that understands the full scope of today's Healthcare System. Neugenix has shown their strong foundation in the field through their dedication to excellence in patient care.</p>
             </div>
             <p className="text-lg"><b>Mustafa Chagani</b>, CEO of The Texas International Institute of Health Professions</p>
           </div>

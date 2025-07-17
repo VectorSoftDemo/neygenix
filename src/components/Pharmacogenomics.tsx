@@ -34,7 +34,7 @@ export default function Pharmacogenomics() {
                     Pharmacogenomics Testing
                 </h1>
                 <p className="text-lg font-semibold max-w-[50%]">
-                    At Nuegenix, we are dedicated to enhancing awareness, comprehension, and clinical application of pharmacogenomics testing. Our 17 gene PGX Advantage testing profile delivers information regarding the relationship between a patient's distinct genetic composition and their response to specific cardiology, pain and psychiatry medications.
+                    At Neugenix, we are dedicated to enhancing awareness, comprehension, and clinical application of pharmacogenomics testing. Our 17 gene PGX Advantage testing profile delivers information regarding the relationship between a patient's distinct genetic composition and their response to specific cardiology, pain and psychiatry medications.
                 </p>
                 <p className="text-lg font-semibold max-w-[50%]">
                     We recognize that as physicians, you must consistently discover methods to improve the care you deliver to each of your patients. Our pharmacogenomics examinations supply information that empowers you to provide individualized care and customized medication to satisfy your patient's distinctive requirements with favorable results.

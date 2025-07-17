@@ -27,7 +27,7 @@ export default function Toxicology() {
                     Toxicology Testing
                 </h1>
                 <p className="text-lg font-semibold max-w-[50%]">
-                    At Nuegenix, we are dedicated to supplying physicians across all specialties with the advanced tools required to track adherence, diversion and effectiveness. Nuegenix's toxicology examination, TOX Advantage, delivers information regarding medication and other substances in a patient's system utilizing either urine or oral fluid specimens. This information enables physicians to observe compliance, directs their continuous treatment of a patient and assists in ensuring the secure use of prescriptions.
+                    At Neugenix, we are dedicated to supplying physicians across all specialties with the advanced tools required to track adherence, diversion and effectiveness. Neugenix's toxicology examination, TOX Advantage, delivers information regarding medication and other substances in a patient's system utilizing either urine or oral fluid specimens. This information enables physicians to observe compliance, directs their continuous treatment of a patient and assists in ensuring the secure use of prescriptions.
                 </p>
                 <p className="text-lg font-semibold max-w-[50%]">
                     We recognize that as physicians, you must consistently discover methods to improve the care you deliver to each of your patients. Our toxicology examinations supply information that empowers you to provide more individualized care and customized medication suggestions to satisfy your patient's requirements with favorable results.

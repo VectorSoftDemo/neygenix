@@ -18,7 +18,7 @@ export default function CareersPage() {
       <Curve innerColor="#46A941" outerColor="#EFEFEF" className="rotate-180" />
       <OurCulture
         title="Career Opportunities"
-        description="We acknowledge that our efforts significantly influence individual lives. Each day at Nuegenix is powered by zeal and commitment – our endeavors hold purpose, and our colleagues realize that their involvement creates substantial impact in another person's existence."
+        description="We acknowledge that our efforts significantly influence individual lives. Each day at Neugenix is powered by zeal and commitment – our endeavors hold purpose, and our colleagues realize that their involvement creates substantial impact in another person's existence."
       />
       <CareerOpportunities
         image="https://aeonglobalhealth.com/wp-content/uploads/2020/09/Career-1-400x400.jpg"
@@ -38,7 +38,7 @@ export default function CareersPage() {
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/mutual-respect.jpg"
           title="Mutual Respect"
-          description="We approach everyone with reciprocal confidence and regard. We nurture an atmosphere that honors, comprehends, and foresees our clients' requirements – our clients remain our foremost concern. Each day at Nuegenix presents a chance for our workforce to cooperate purposefully in enhancing lives."
+          description="We approach everyone with reciprocal confidence and regard. We nurture an atmosphere that honors, comprehends, and foresees our clients' requirements – our clients remain our foremost concern. Each day at Neugenix presents a chance for our workforce to cooperate purposefully in enhancing lives."
           titleClass="bg-[#424492] text-white max-w-[400px] py-1"
           descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
           imageClass="w-[400px] h-[200px]"
@@ -54,7 +54,7 @@ export default function CareersPage() {
         <CareerItems
           image="https://aeonglobalhealth.com/wp-content/uploads/2020/10/career-growth.jpg"
           title="Career Growth"
-          description="We strive to offer vocations abundant with stimulating and fulfilling work prospects, coupled with individual and occupational advancement. Ongoing education, workplace guidance, and distinctly structured progression programs stay paramount at Nuegenix. Targets and aims are meticulously detailed to assist staff in comprehending their role in organizational achievement. Supervisors provide regular input to empower personnel to successfully handle their productivity and career progression. Advancement and acknowledgment are granted according to concrete outcomes and individual efficiency."
+          description="We strive to offer vocations abundant with stimulating and fulfilling work prospects, coupled with individual and occupational advancement. Ongoing education, workplace guidance, and distinctly structured progression programs stay paramount at Neugenix. Targets and aims are meticulously detailed to assist staff in comprehending their role in organizational achievement. Supervisors provide regular input to empower personnel to successfully handle their productivity and career progression. Advancement and acknowledgment are granted according to concrete outcomes and individual efficiency."
           titleClass="bg-[#424492] text-white max-w-[400px] py-1"
           descriptionClass="bg-[#46A941] text-white max-w-[400px] py-1"
           imageClass="w-[400px] h-[200px]"
@@ -64,11 +64,11 @@ export default function CareersPage() {
         <div className="flex flex-col gap-10 justify-center items-center p-8 pb-10  text-white max-w-7xl">
           <div className="flex flex-col justify-center items-center gap-4 text-center">
             <h1 className="text-4xl font-semibold">Apply Now</h1>
-            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@nuegenix.com. Though we sincerely value every submission, solely selected applicants will receive communication.</p>
+            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@Neugenix.com. Though we sincerely value every submission, solely selected applicants will receive communication.</p>
           </div>
           <div className="flex flex-col justify-center items-center gap-4 text-center">
-            <h1 className="text-4xl font-semibold">Apply Now to Intern at Nuegenix</h1>
-            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@nuegenix.com.</p>
+            <h1 className="text-4xl font-semibold">Apply Now to Intern at Neugenix</h1>
+            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@Neugenix.com.</p>
           </div>
         </div>
       </div>

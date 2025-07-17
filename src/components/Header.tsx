@@ -88,7 +88,7 @@ export default function Header({ setSelectedTab, selectedTab }: { setSelectedTab
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="2xl:text-2xl sm:text-xs  2xl:px-4 sm:px-2 font-bold text-[#65bc7b]">
-            NUEGENIX
+            NEUGENIX
             </Link>
           </div>
           <div className="flex items-center h-full">

@@ -14,22 +14,22 @@ export default function PharmacogenomicsTesting() {
         {
             image: "https://aeonglobalhealth.com/wp-content/uploads/2020/09/BDX-Icon-2-66x66.png",
             title: "Eﬀective Quality Controls",
-            description: "Our Quality Control program significantly minimizes the probability of inaccurate results. At Nuegenix, every test outcome undergoes comprehensive review while the final report receives examination by a senior scientist before release."
+            description: "Our Quality Control program significantly minimizes the probability of inaccurate results. At Neugenix, every test outcome undergoes comprehensive review while the final report receives examination by a senior scientist before release."
         },
         {
             image: "https://aeonglobalhealth.com/wp-content/uploads/2020/09/Icon-5-66x66.png",
             title: "Well-Trained Scientists",
-            description: "Our seasoned management team and Ph.D. scientists position us favorably to accomplish superior results and enhanced performance. All pharmacogenetic patient specimens receive handling with utmost care by extensively trained genetic scientists in our cutting-edge facility. The scientists remain available for comprehensive consultations. Nuegenix also maintains a robust, internationally recognized, cross-functional scientific advisory board that establishes us as a premier player in scientific innovation within clinical diagnostics and healthcare technology."
+            description: "Our seasoned management team and Ph.D. scientists position us favorably to accomplish superior results and enhanced performance. All pharmacogenetic patient specimens receive handling with utmost care by extensively trained genetic scientists in our cutting-edge facility. The scientists remain available for comprehensive consultations. Neugenix also maintains a robust, internationally recognized, cross-functional scientific advisory board that establishes us as a premier player in scientific innovation within clinical diagnostics and healthcare technology."
         },
         {
             image: "https://aeonglobalhealth.com/wp-content/uploads/2020/09/TOX-Icon-5-66x66.png",
             title: "Quick Turnaround Time",
-            description: "At Nuegenix, utilization of the newest technology assists in analyzing patient specimens in a swift and precise manner. We employ HPLC-tandem mass spectrometry systems for accuracy and velocity, enabling Nuegenix to deliver rapid and dependable turnaround times."
+            description: "At Neugenix, utilization of the newest technology assists in analyzing patient specimens in a swift and precise manner. We employ HPLC-tandem mass spectrometry systems for accuracy and velocity, enabling Neugenix to deliver rapid and dependable turnaround times."
         },
         {
             image: "https://aeonglobalhealth.com/wp-content/uploads/2020/09/Icon-6-66x66.png",
             title: "Easily Interpreted and Clinically Actionable Reports",
-            description: "Our testing reports are thorough and straightforward to comprehend; in each testing protocol the results are generated in simple formats delivered through a secure portal, fax or EMR. Nuegenix also offers professional support in result interpretation; skilled genetic scientists are available to assist physicians in understanding the results and incorporating them into a patient's comprehensive treatment strategy."
+            description: "Our testing reports are thorough and straightforward to comprehend; in each testing protocol the results are generated in simple formats delivered through a secure portal, fax or EMR. Neugenix also offers professional support in result interpretation; skilled genetic scientists are available to assist physicians in understanding the results and incorporating them into a patient's comprehensive treatment strategy."
         },
         {
             image: "https://aeonglobalhealth.com/wp-content/uploads/2020/09/Icon-7-66x66.png",
@@ -63,7 +63,7 @@ export default function PharmacogenomicsTesting() {
             </div>
         </div>
         <div className="flex flex-col items-center pt-10">
-            <h1 className="text-3xl font-bold text-center text-[#424492]">Why Nuegenix?</h1>
+            <h1 className="text-3xl font-bold text-center text-[#424492]">Why Neugenix?</h1>
             <div className="flex  flex-col justify-center items-center gap-4 mt-4">
                 {whyAeon.map((item, index) => (
                     <div key={index} className="flex justify-center gap-4 items-start w-full">

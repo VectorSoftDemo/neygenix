@@ -87,7 +87,7 @@ export default function HeroSection() {
                   Our Culture
                 </h2>
                 <p className="text-[#292929] max-w-7xl text-xl ">
-                  We recognize that our efforts influence people's lives. Each day at Nuegenix overflows with vitality, dedication and purpose – our work holds meaning and our team understands that their contributions create significant impact in another person's existence.
+                  We recognize that our efforts influence people's lives. Each day at Neugenix overflows with vitality, dedication and purpose – our work holds meaning and our team understands that their contributions create significant impact in another person's existence.
                 </p>
               </div>
               <div className="flex flex-col gap-1">
@@ -228,7 +228,7 @@ export default function HeroSection() {
             <div className="flex flex-col gap-4 justify-center w-7xl pr-8">
               <h1 className="2xl:text-4xl sm:text-2xl font-bold">Client Testimonials</h1>
               <div className="text-lg bg-white p-4 ">
-                <p>Nuegenix represents one of the most progressive organizations that comprehends the complete range of the current Healthcare System. Nuegenix has demonstrated their solid foundation in the industry through their emphasis on excellence in care.</p>
+                <p>Neugenix represents one of the most progressive organizations that comprehends the complete range of the current Healthcare System. Neugenix has demonstrated their solid foundation in the industry through their emphasis on excellence in care.</p>
               </div>
               <p className="text-lg"><b>Mustafa Chagani</b>, CEO of The Texas International Institute of Health Professions</p>
             </div>

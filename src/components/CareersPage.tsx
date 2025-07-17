@@ -64,11 +64,11 @@ export default function CareersPage() {
         <div className="flex flex-col gap-10 justify-center items-center p-8 pb-10  text-white max-w-7xl">
           <div className="flex flex-col justify-center items-center gap-4 text-center">
             <h1 className="text-4xl font-semibold">Apply Now</h1>
-            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@aeonglobalhealth.com. Though we sincerely value every submission, solely selected applicants will receive communication.</p>
+            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@nuegenix.com. Though we sincerely value every submission, solely selected applicants will receive communication.</p>
           </div>
           <div className="flex flex-col justify-center items-center gap-4 text-center">
             <h1 className="text-4xl font-semibold">Apply Now to Intern at Nuegenix</h1>
-            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@aeonglobalhealth.com.</p>
+            <p className="text-xl font-semibold">Candidates must forward their curriculum vitae and accompanying letter explaining how they satisfy the particular role specifications to hr@nuegenix.com.</p>
           </div>
         </div>
       </div>

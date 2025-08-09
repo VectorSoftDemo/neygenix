@@ -1,4 +1,4 @@
-import Curve from "./Curve";
+import Curve from "./decoractiveItems/Curve";
 import PharmacogenomicsTesting from "./PharmacogenomicsTesting";
 
 export default function Pharmacogenomics() {

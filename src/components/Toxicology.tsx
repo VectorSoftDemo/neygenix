@@ -1,4 +1,4 @@
-import Curve from "./Curve";
+import Curve from "./decoractiveItems/Curve";
 import PharmacogenomicsTesting from "./PharmacogenomicsTesting";
 
 export default function Toxicology() {
@@ -34,7 +34,7 @@ export default function Toxicology() {
                 </p>
             </div>
             <Curve innerColor="#46A941" outerColor="#EFEFEF" className="rotate-180" />
-           <PharmacogenomicsTesting />
+            <PharmacogenomicsTesting />
             <div className="flex flex-col items-center gap-4 mt-4">
                 <h1 className="text-4xl font-bold text-center text-[#424492]">The Testing Process</h1>
                 <img src="	https://aeonglobalhealth.com/wp-content/uploads/2020/09/bdx-testing-600x237.png" alt="" className="w-[600px] h-[250px]" />
@@ -47,7 +47,7 @@ export default function Toxicology() {
             </div>
             <div className="flex flex-col justify-center items-center gap-4 py-10">
                 <h1 className="text-4xl font-bold text-start text-[#424492] w-full max-w-[60%]">References</h1>
-                <ol type="1" className="max-w-[58%] text-lg flex flex-col gap-4 " style={{listStyleType: 'decimal'}}>
+                <ol type="1" className="max-w-[58%] text-lg flex flex-col gap-4 " style={{ listStyleType: 'decimal' }}>
                     <li>
                         <p>The Essentials of Diagnostics whitepaper. DX Insights. January 2012.</p>
                     </li>

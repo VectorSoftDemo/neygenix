@@ -91,9 +91,12 @@ function NewsItem({ img, title, summary }: { img: string; title: string; summary
       <div className="flex-1 min-w-0">
         <p className="text-xs sm:text-sm xl:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">{title}</p>
         <p className="text-[0.65rem] sm:text-xs xl:text-base text-gray-700 mb-1 sm:mb-2">{summary}</p>
-        <div className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-[0.65rem] sm:text-xs xl:text-base px-3 py-1 rounded-2xl">
-          Learn More
-        </div>
+        <Link
+          href="/services"
+          className="bg-[#2d2e83] hover:bg-[#1a1b5a] text-white text-[0.65rem] sm:text-xs xl:text-base px-3 py-1 rounded-2xl transition-colors duration-200 inline-block"
+        >
+          Learn More about our services
+        </Link>
       </div>
     </div>
   );

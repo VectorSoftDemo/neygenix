@@ -64,7 +64,7 @@ const Blog = ()=>{
         },
     ];
     return (
-        <main className="flex flex-col items-center py-8 bg-[#]  min-h-screen">
+        <main className="flex flex-col items-center py-8 mt-16 lg:mt-20 xl:mt-25  min-h-screen">
 
             {/* hero section */}
             <section>
@@ -77,9 +77,6 @@ const Blog = ()=>{
                     </div>
                 </div>
             </section>
-
-        
-
 
             {/* Blog/news cards */}
             <section
@@ -95,7 +92,7 @@ const Blog = ()=>{
                     px-2 sm:px-4 md:px-6
                 "
             >
-                <h2 className="col-span-full text-3xl md:text-4xl font-bold text-[#23272b] mb-4 text-left">
+                <h2 className="col-span-full text-3xl md:text-4xl xl:text-6xl font-bold text-[#144afc] mb-4 text-left">
                     Latest Blog Posts
                 </h2>
                 {blogPosts.map((post, idx) => (
@@ -126,10 +123,10 @@ const Blog = ()=>{
                             
                         />
                         <div className="flex flex-col flex-1">
-                            <h2 className="text-lg md:text-2xl font-semibold text-[#23272b] mb-1 leading-snug">
+                            <h2 className="text-lg md:text-2xl xl:text-3xl font-semibold text-[#23272b] mb-1 leading-snug">
                                 {post.title}
                             </h2>
-                            <p className="text-base md:text-lg text-[#23272b] mb-2 font-normal">
+                            <p className="text-base md:text-lg xl:text-2xl text-[#23272b] mb-2 font-normal">
                                 {post.desc}
                             </p>
                            
@@ -148,7 +145,7 @@ const Blog = ()=>{
                     grid-cols-1 sm:grid-cols-2
                 "
             >
-                <h2 className="col-span-full text-2xl md:text-3xl font-bold text-[#23272b] mb-4 text-left">
+                <h2 className="col-span-full text-2xl md:text-3xl xl:text-6xl font-bold text-[#144afc] mb-4 text-left">
                     News & Updates
                 </h2>
                 {extraPosts.map((post, idx) => (
@@ -180,11 +177,11 @@ const Blog = ()=>{
                                 
                             />
                             <div className="flex flex-col justify-center px-0 sm:px-4 py-2 w-full">
-                                <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#23272b] mb-1 leading-snug">
+                                <h2 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-semibold text-[#23272b] mb-1 leading-snug">
                                     {post.title}
                                 </h2>
-                                <div className="text-xs sm:text-sm text-gray-500 mb-1">{post.published}</div>
-                                <p className="text-sm sm:text-base md:text-lg text-[#23272b] mb-2 font-normal">
+                                <div className="text-xs sm:text-sm xl:text-2xl text-gray-500 mb-1">{post.published}</div>
+                                <p className="text-sm sm:text-base md:text-lg xl:text-2xl text-[#23272b] mb-2 font-normal">
                                     {post.desc}
                                 </p>
                             </div>

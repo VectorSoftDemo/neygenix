@@ -1,18 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Curve from "@/components/decoractiveItems/Curve";
-import ContactDetails from "@/components/ContactDetails";
+import ContactDetails from "@/components/ContactForm";
 
 
-import Toxicology from '@/components/Toxicology';
-import Pharmacogenomics from '@/components/Pharmacogenomics';
 
 
 export default function Home() {
 
 
   return (
-    <main className="">
+    <main className=" mt-16 lg:mt-20 xl:mt-25">
 
       {/* Hero Section */}
       <section
@@ -58,7 +56,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-4 sm:space-y-6 w-full">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight sm:leading-snug drop-shadow-lg">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-6xl font-bold leading-tight sm:leading-snug drop-shadow-lg">
               We Have The TOX Advantage
               <sup className="text-lg sm:text-2xl md:text-4xl align-super ml-1">
                 TM
@@ -66,7 +64,7 @@ export default function Home() {
             </h1>
 
             <details className="max-w-full mx-auto text-left group">
-              <summary className="cursor-pointer text-sm sm:text-base md:text-lg xl:text-xl text-white/90 hover:text-white transition-colors font-medium list-none">
+              <summary className="cursor-pointer text-sm sm:text-base md:text-lg xl:text-2xl text-white/90 hover:text-white transition-colors font-medium list-none">
                 <span>
                   The CDC reports that opioid dependency represents an escalating health crisis with 115 Americans perishing daily from overdose incidents. Drug-related adverse reactions  (ADEs) constitute a significant
                   <span className="inline group-open:hidden text-green-200 ml-5">(Read more)</span>
@@ -74,32 +72,35 @@ export default function Home() {
                 </span>
               </summary>
               <p className="mt-2 text-sm sm:text-base md:text-lg xl:text-xl font-medium text-white/90">
-                 healthcare concern  in the United States. Approximately
+                healthcare concern  in the United States. Approximately
                 82% of American adults consume at least one pharmaceutical while 29% utilize five or more medications. ADEs result in 700,000 emergency department encounters, 120,000 hospital admissions, and 100,000 fatalities annually in the US. Furthermore, this generates over $30 billion in excess healthcare expenditures yearly.
               </p>
             </details>
 
             <div className="flex justify-center">
-              <button className="bg-[#46A941] hover:bg-green-600 transition-colors text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-3xl text-base sm:text-lg shadow-md">
+              <Link
+                href="#1"
+                className="bg-[#46A941] hover:bg-green-600 transition-colors text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-3xl text-base sm:text-lg xl:text-2xl shadow-md inline-block"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefit from Toxicology Testing */}
-      <article className="flex flex-col justify-center items-center text-center bg-white px-3 py-8 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-        <h2 className="text-xl sm:text-2xl md:text-3xl xl:text-5xl font-bold text-[#4a4e57] mb-4 sm:mb-6">
+      <article id="1" className="flex flex-col justify-center items-center text-center bg-white px-3 py-8 sm:px-6 md:px-10 lg:px-16 xl:px-24">
+        <h2 className="text-xl sm:text-2xl md:text-3xl xl:text-6xl font-bold text-[#144afc] mb-4 sm:mb-6">
           Who Can Benefit From Toxicology Testing?
         </h2>
-        <p className="text-sm sm:text-base md:text-lg xl:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-full mx-auto text-left">
+        <p className="text-sm sm:text-base md:text-lg xl:text-3xl text-gray-600 mb-6 sm:mb-8 max-w-full mx-auto text-left">
           <b>Toxicology examination</b> delivers vital information and insights that regulatory authorities and medical professionals can utilize to establish guidelines and provide care that restricts substance exposure, diminishing the probability of adverse drug reactions and harmful health consequences.
         </p>
         <div className="flex flex-col justify-center items-center w-full">
           <div className="w-full flex justify-center mb-4">
             <Image
-              src="/Home/img1-1.webp"
+              src="/img1-1.webp"
               alt="Toxicology Testing"
               width={400}
               height={158}
@@ -107,7 +108,7 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <button className="bg-[#46A941] text-white px-6 py-2 sm:px-8 sm:py-3 rounded-3xl font-semibold hover:bg-green-600 transition-colors text-base sm:text-lg">
+            <button className="bg-[#46A941] text-white px-6 py-2 sm:px-8 sm:py-3 rounded-3xl font-semibold hover:bg-green-600 transition-colors text-base sm:text-lg xl:text-2xl">
               Learn More
             </button>
           </div>
@@ -116,22 +117,22 @@ export default function Home() {
 
       {/* Core Values Section */}
       <article className="flex flex-col items-center justify-center  bg-[#424492] text-white px-4 py-8 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-        <h4 className="text-base sm:text-lg md:text-2xl xl:text-3xl font-bold mb-8 sm:mb-10 max-w-full mx-auto leading-snug sm:leading-normal">
+        <h4 className="text-base sm:text-lg md:text-2xl xl:text-4xl font-bold mb-8 sm:mb-10 max-w-full mx-auto leading-snug sm:leading-normal">
           Each and every day, we supply information that transforms lives. We guarantee that we transmit this knowledge in the swiftest, most precise, and most beneficial manner achievable. Lives rely on it.
         </h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-full mx-auto">
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col items-center">
-            <p className="text-xs sm:text-sm md:text-base xl:text-xl leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base xl:text-2xl leading-relaxed">
               We aim to motivate and enable you to make well-informed health choices and experience superior lives. With renewed perspectives, we discover innovative approaches to satisfy your requirements, through groundbreaking products and services, valuable guidance and a supportive and compassionate mindset.
             </p>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col items-center ">
-            <p className="text-xs sm:text-sm md:text-base xl:text-xl leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base xl:text-2xl leading-relaxed">
               We aim to motivate and enable you to make well-informed health choices and experience superior lives. With renewed perspectives, we discover innovative approaches to satisfy your requirements, through groundbreaking products and services, valuable guidance and a supportive and compassionate mindset.
             </p>
           </div>
           <div className="bg-white/10 rounded-xl shadow-lg p-6 flex flex-col items-center">
-            <p className="text-xs sm:text-sm md:text-base xl:text-xl leading-relaxed font-medium">
+            <p className="text-xs sm:text-sm md:text-base xl:text-2xl leading-relaxed font-medium">
               We provide knowledge. We furnish understanding. We supply authority to medical professionals. Experience Enhanced Living.
             </p>
           </div>
@@ -143,40 +144,47 @@ export default function Home() {
 
       {/* Services Section */}
       <article className="w-full bg-[#EFEFEF] px-2 py-8 sm:px-4 md:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-10">
+        <div className="max-w-full mx-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-10">
           {[
             {
               title: "Pharmacogenomics Testing",
-              img: "/Home/pgx-1.webp",
+              img: "/Home/h1.webp",
+              href:'/services/#pharmacogenomics '
             },
             {
               title: "Drug Testing Facilities",
-              img: "/Home/tox-1.webp",
+              img: "/Home/h3.webp",
+              href: '/services/#drug-testing '
             },
             {
               title: "COVID-19 Testing",
-              img: "covid19.png",
+              img: "/Home/covid.webp",
+              href: '/services '
             },
           ].map((item, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200 p-4 sm:p-6"
+              className="flex flex-col items-center "
             >
-              <div className="w-full flex justify-center mb-4">
+              <div className="w-full flex justify-center mb-4 relative h-40 sm:h-70 xl:h-100">
                 <Image
-                  src={`${item.img}`}
+                  src={item.img}
                   alt={item.title}
-                  width={256}
-                  height={256}
-                  className="w-40 h-40 sm:w-56 sm:h-56 xl:w-64 xl:h-64 object-contain"
+                  fill
+                  sizes="(max-width: 640px) 10rem, (max-width: 1280px) 14rem, 20rem"
+                  className="object-cover rounded-2xl"
+                  priority={idx === 0}
                 />
               </div>
-              <h2 className="text-center text-lg sm:text-xl xl:text-2xl text-[#292929] font-bold mb-2">
+              <h2 className="text-center text-lg sm:text-xl xl:text-4xl text-[#292929] font-bold mb-2">
                 {item.title}
               </h2>
-              <button className="mt-2 bg-[#46A941] hover:bg-green-600 transition-colors text-white font-semibold px-6 py-2 rounded-2xl text-sm sm:text-base">
+              <Link
+                href={item.href}
+                className="mt-2 bg-[#46A941] hover:bg-green-600 transition-colors text-white font-semibold px-6 py-2 rounded-2xl text-sm sm:text-base lg:text-xl xl:text-2xl inline-block text-center"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -185,18 +193,18 @@ export default function Home() {
       {/* Culture Section */}
       <article className="flex flex-col lg:flex-row justify-between items-center w-full  py-10 ">
         {/* Left content */}
-        <div className="flex flex-col gap-6 w-full lg:w-1/2 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
+        <div className="flex flex-col gap-6 w-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#424492] font-semibold mb-3 sm:mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-6xl text-[#144afc] font-semibold mb-3 sm:mb-4">
               Our Culture
             </h2>
-            <p className="text-[#292929] text-sm sm:text-base md:text-lg lg:text-2xl ">
+            <p className="text-[#292929] text-sm sm:text-base md:text-lg lg:text-2xl xl:text-4xl ">
               We recognize that our efforts influence people's lives. Each day at Neugenix overflows with vitality, dedication and purpose – our work holds meaning and our team understands that their contributions create significant impact in another person's existence.
             </p>
           </div>
 
           <div className="flex flex-col gap-3 sm:gap-4">
-            <h3 className="text-xl sm:text-2xl md:text-3xl text-[#46A941] font-semibold">
+            <h3 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl text-[#277734] font-semibold">
               Together, We DRIVE Success.
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6">
@@ -218,7 +226,7 @@ export default function Home() {
                     height={96}
                     className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-30 lg:h-30 object-contain"
                   />
-                  <p className="text-center text-xs sm:text-sm md:text-base text-white py-2 px-4 rounded-2xl bg-[#424492] font-medium">
+                  <p className="text-center text-xs sm:text-sm md:text-base xl:text-2xl text-white py-2 px-4 rounded-2xl bg-[#424492] font-medium">
                     {item.label}
                   </p>
                 </div>
@@ -228,7 +236,7 @@ export default function Home() {
         </div>
 
         {/* Right image (unchanged size) */}
-        <div className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-end items-center">
+        <div className="hidden md:flex w-full lg:w-1/2 mt-10 lg:mt-0  justify-end items-center">
           <Image
             src="halflogo.webp"
             alt="Culture Visual"
@@ -243,19 +251,22 @@ export default function Home() {
       <article className="flex flex-col bg-[#EFEFEF] lg:flex-row gap-8 justify-around items-center  p-2">
         {/* Text Content */}
         <div className="flex flex-col gap-4 max-w-7xl p-4">
-          <h1 className="text-3xl lg:text-4xl font-bold text-black">
+          <h1 className="text-3xl lg:text-4xl xl:text-6xl font-bold text-[#144afc]">
             Career Opportunities
           </h1>
-          <p className="text-lg lg:text-2xl text-black">
+          <p className="text-lg lg:text-2xl xl:text-3xl text-black">
             Our enterprise spans numerous diverse functions. You can discover possibilities in laboratory operations and oversight, research initiatives, information technology, finance and administration, sales and client management, marketing and brand development, human resources and additional areas.
           </p>
-          <button className="bg-[#1578fa] rounded-2xl text-white px-5 py-2 lg:py-4 font-semibold w-fit text-sm lg:text-xl">
+          <Link
+            href="/contact"
+            className="bg-[#1578fa] rounded-2xl text-white px-5 py-2 lg:py-4 font-semibold w-fit text-sm lg:text-xl"
+          >
             APPLY NOW
-          </button>
+          </Link>
         </div>
 
         {/* Image */}
-        <div className="w-[360px] h-[360px]">
+        <div className=" w-[360px] h-[360px]">
           <img
             src="https://aeonglobalhealth.com/wp-content/uploads/2022/06/aeon-ijmage-02.png"
             alt="Career Opportunities"
@@ -266,7 +277,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <article className="flex justify-between items-center w-full bg-[#] py-4 gap-10">
-        <div className="flex flex-col gap-4">
+        <div className="hidden md:flex flex-col gap-4">
           <Image
             src="halflogo2.webp"
             alt="Toxicology Testing"
@@ -276,16 +287,16 @@ export default function Home() {
             unoptimized
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-2xl px-4 sm:px-8 xl:pr-8 gap-4 mx-auto">
-          <h1 className="text-xl sm:text-2xl xl:text-4xl font-bold text-[#424492] text-center xl:text-left">
+        <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-8 xl:pr-8 gap-4 mx-auto">
+          <h1 className="text-xl sm:text-2xl  xl:text-6xl font-bold text-[#144afc] text-center xl:text-left">
             Client Testimonials
           </h1>
-          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 text-base sm:text-lg">
+          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 text-base sm:text-lg xl:text-3xl">
             <p className="text-gray-700 leading-relaxed">
               Neugenix represents one of the most progressive organizations that comprehends the complete range of the current Healthcare System. Neugenix has demonstrated their solid foundation in the industry through their emphasis on excellence in care.
             </p>
           </div>
-          <p className="text-base sm:text-lg text-gray-800 text-center xl:text-left">
+          <p className="text-base sm:text-lg xl:text-3xl text-gray-800 text-center xl:text-left">
             <span className="font-semibold">Mustafa Chagani </span>
             <span className="block sm:inline"> CEO of The Texas International Institute of Health Professions</span>
           </p>
@@ -303,12 +314,12 @@ export default function Home() {
       {/* Decorative Curve */}
       {/* <Curve innerColor="#86efac" outerColor="#424492" /> */}
 
-   
+
       {/* Blog & Contact Section */}
-      <section className="flex flex-col bg-white xl:flex-row justify-around items-center w-full  px-2 sm:px-4 md:px-8 py-8 gap-8 xl:gap-12 pb-12 xl:pb-20">
+      <section className="flex flex-col bg-white xl:flex-row justify-around items-center w-full   sm:px-4 md:px-8 py-8 gap-8 xl:gap-12 px-12 xl:px-20">
         {/* Blog Section */}
-        <div className="flex flex-col gap-4 w-full xl:w-1/2 max-w-2xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-[40px] text-black py-2 sm:py-4 font-medium text-center xl:text-left">
+        <div className="flex flex-col gap-4 w-full ">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-6xl text-[#144afc] py-2 sm:py-4 font-medium text-center xl:text-left">
             Latest Blogs
           </h2>
           <div className="flex flex-col gap-3">
@@ -369,7 +380,7 @@ export default function Home() {
           </div>
         </div>
         {/* Contact Section */}
-        <div className="w-full xl:w-1/2 max-w-xl mt-8 xl:mt-0">
+        <div className="w-full mt-8 xl:mt-0">
           <ContactDetails />
         </div>
       </section>

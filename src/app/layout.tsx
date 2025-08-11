@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Neugenix ",
@@ -47,6 +48,38 @@ export default function RootLayout({
       {/* <body className="bg-gradient-to-r from-[#69a185] via-[#bdf7ba] to-[#69a185] min-h-screen"> */}
       <body className="bg-gradient-to-l from-[#bdf7ba] via-[#e6fae6] to-[#bdf7ba] min-h-screen">
           <Header />
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            success: {
+              style: {
+                background: '#d1fae5', // Light green (Tailwind green-100)
+                color: '#065f46',      // Dark green text (Tailwind green-900)
+                border: '1px solid #6ee7b7',
+                fontWeight: 500,
+              },
+              iconTheme: {
+                primary: '#10b981', // Tailwind green-500
+                secondary: '#d1fae5',
+              },
+            },
+            error: {
+              style: {
+                background: '#fee2e2', // Light red (Tailwind red-100)
+                color: '#991b1b',      // Dark red text (Tailwind red-900)
+                border: '1px solid #fca5a5',
+                fontWeight: 500,
+              },
+              iconTheme: {
+                primary: '#ef4444', // Tailwind red-500
+                secondary: '#fee2e2',
+              },
+            },
+          }}
+        />
+
+        //ui for react-hot-toast
+
           {children}
           <Footer />
       </body>

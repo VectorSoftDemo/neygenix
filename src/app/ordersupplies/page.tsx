@@ -169,7 +169,7 @@ const OrderSupply = () => {
     ];
 
     return (
-        <main className="min-h-screen  py-8 px-4 sm:px-6 lg:px-8">
+        <main className="min-h-screen mt-16 lg:mt-20 xl:mt-25  py-8 px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
                 <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12">
                     <div className="text-center mb-12">

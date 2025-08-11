@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function PharmacogenomicsTesting() {
     const whyAeon = [
         {
@@ -39,45 +41,55 @@ export default function PharmacogenomicsTesting() {
 
     ]
     return (
-        <div className="flex flex-col items-center  p-8">
-        <div className="flex flex-col max-w-[60%] gap-4">
-            <h1 className="text-3xl font-bold text-center text-[#424492]">
-                Who can Benefit from Toxicology Testing?
-            </h1>
-            <p className="text-lg text-start">
-                Toxicology examination delivers essential information and insights that regulatory authorities and healthcare professionals can utilize to establish policies and provide treatment that restricts substance exposures, diminishing the probability of adverse drug reactions and harmful health consequences.
-            </p>
-            <p className="text-lg font-semibold max-w-[50%] text-start  ">
-                Toxicology examinations assist physicians to:
-            </p>
-            <div className="flex justify-center items-center gap-4 mt-4">
-                <ul className="list-disc ">
-                    <li>Observe the patient's treatment</li>
-                    <li>Verify suspected toxicity</li>
-                    <li className="max-w-[80%]">Recognize potential risks from other medications and help prevent combined drug toxicity</li>
-                </ul>
-                <ul className="list-disc">
-                    <li>Identify if a patient shows inadequate response</li>
-                    <li>Track patient's adherence to treatment</li>
-                </ul>
+        <section className="flex flex-col items-center w-full px-4 py-8 sm:px-6 md:px-10 lg:px-20 xl:px-32">
+            {/* Who can Benefit */}
+            <div className="flex flex-col w-full gap-4">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#144afc]">
+                    Who can Benefit from Toxicology Testing?
+                </h1>
+                <p className="text-base sm:text-lg lg:text-2xl text-left">
+                    Toxicology examination delivers essential information and insights that regulatory authorities and healthcare professionals can utilize to establish policies and provide treatment that restricts substance exposures, diminishing the probability of adverse drug reactions and harmful health consequences.
+                </p>
+                <p className="text-base sm:text-lg font-semibold text-left lg:text-3xl">
+                    Toxicology examinations assist physicians to:
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center items-start gap-4 mt-2 w-full ">
+                    <ul className="list-disc pl-5 flex-1 space-y-1 lg:text-2xl">
+                        <li>Observe the patient's treatment</li>
+                        <li>Verify suspected toxicity</li>
+                        <li>Recognize potential risks from other medications and help prevent combined drug toxicity</li>
+                        <li>Identify if a patient shows inadequate response</li>
+                        <li>Track patient's adherence to treatment</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div className="flex flex-col items-center pt-10">
-            <h1 className="text-3xl font-bold text-center text-[#424492]">Why Neugenix?</h1>
-            <div className="flex  flex-col justify-center items-center gap-4 mt-4">
-                {whyAeon.map((item, index) => (
-                    <div key={index} className="flex justify-center gap-4 items-start w-full">
-                        <div className="flex justify-center items-center w-[3%]">
-                            <img src={item.image} alt="" className="w-15 h-15" />
+            {/* Why Neugenix */}
+            <div className="flex flex-col items-center pt-10 w-full">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#144afc]">Why Neugenix?</h1>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6 w-full ">
+                    {whyAeon.map((item, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center bg-white rounded-xl shadow-md p-5 h-full transition hover:shadow-lg"
+                        >
+                            <div className="flex justify-center items-center mb-3 w-full">
+                                <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        fill
+                                        className="object-contain"
+                                        loading="lazy"
+                                        sizes="(max-width: 640px) 3rem, (max-width: 768px) 3.5rem, (max-width: 1024px) 4rem, (max-width: 1280px) 5rem, 6rem"
+                                    />
+                                </div>
+                            </div>
+                            <h2 className="text-lg sm:text-xl lg:text-3xl font-semibold text-center text-[#144afc] mb-2">{item.title}</h2>
+                            <p className="text-sm sm:text-base lg:text-2xl text-center text-gray-700">{item.description}</p>
                         </div>
-                        <div className="flex flex-col gap-4 w-[90%] max-w-[40%] ">
-                            <h1 className="text-2xl font-bold mt-4">{item.title}</h1>
-                            <p className="text-lg">{item.description}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
     );
 }

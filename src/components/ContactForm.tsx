@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 export default function ContactDetails() {
     const [formData, setFormData] = useState({
@@ -12,7 +13,11 @@ export default function ContactDetails() {
         message: '',
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const [submitting, setSubmitting] = useState(false);
+
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    ) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
             ...prev,
@@ -20,14 +25,44 @@ export default function ContactDetails() {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form Data:', formData);
+        setSubmitting(true);
+
+        try {
+            const res = await fetch('/api/sendemail', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await res.json();
+            if (res.ok) {
+                toast.success('Message sent successfully to Neugenix. Thank you!');
+                setFormData({
+                    name: '',
+                    dob: '',
+                    gender: '',
+                    phone: '',
+                    email: '',
+                    message: '',
+                });
+            } else {
+                toast.error(data.error || 'Failed to send message, try again later');
+            }
+        } catch (error) {
+            console.error(error);
+            toast.error('Something went wrong, try again later');
+        } finally {
+            setSubmitting(false);
+        }
     };
 
     return (
-        <section className="w-full max-w-3xl mx-auto rounded-xl p-3 sm:p-5 mt-8 bg-[#f9f9f9] shadow-md">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">Contact Us</h2>
+        <section className="w-full max-w-4xl mx-auto rounded-xl p-3 sm:p-5 mt-8 bg-[#f9f9f9] shadow-md">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 text-center text-[#144afc]">
+                Contact Us
+            </h2>
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                 <div>
                     <label className="block font-semibold mb-1">Name * :</label>
@@ -39,6 +74,7 @@ export default function ContactDetails() {
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                        disabled={submitting}
                     />
                 </div>
 
@@ -50,6 +86,7 @@ export default function ContactDetails() {
                         value={formData.dob}
                         onChange={handleChange}
                         className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        disabled={submitting}
                     />
                 </div>
 
@@ -60,8 +97,11 @@ export default function ContactDetails() {
                         value={formData.gender}
                         onChange={handleChange}
                         className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        disabled={submitting}
                     >
-                        <option value="" disabled>Select A Gender</option>
+                        <option value="" disabled>
+                            Select A Gender
+                        </option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
@@ -78,6 +118,7 @@ export default function ContactDetails() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        disabled={submitting}
                     />
                 </div>
 
@@ -91,11 +132,14 @@ export default function ContactDetails() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        disabled={submitting}
                     />
                 </div>
 
                 <div>
-                    <label className="block font-semibold mb-1">Message / Reason For Contact * :</label>
+                    <label className="block font-semibold mb-1">
+                        Message / Reason For Contact * :
+                    </label>
                     <textarea
                         name="message"
                         required
@@ -103,15 +147,43 @@ export default function ContactDetails() {
                         value={formData.message}
                         onChange={handleChange}
                         className="w-full px-4 py-2 bg-white rounded-lg min-h-[80px] text-black border border-gray-300"
+                        disabled={submitting}
                     />
                 </div>
 
                 <div className="flex justify-center">
                     <button
                         type="submit"
-                        className="bg-[#46A941] hover:bg-[#3e8d39] text-white font-semibold px-6 py-2 rounded transition-all duration-200"
+                        className="bg-[#46A941] hover:bg-[#3e8d39] text-white font-semibold px-6 py-2 rounded transition-all duration-200 flex items-center justify-center min-w-[120px]"
+                        disabled={submitting}
                     >
-                        Submit
+                        {submitting ? (
+                            <>
+                                <svg
+                                    className="animate-spin h-5 w-5 mr-2 text-white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <circle
+                                        className="opacity-25"
+                                        cx="12"
+                                        cy="12"
+                                        r="10"
+                                        stroke="currentColor"
+                                        strokeWidth="4"
+                                    ></circle>
+                                    <path
+                                        className="opacity-75"
+                                        fill="currentColor"
+                                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                                    ></path>
+                                </svg>
+                                Submitting...
+                            </>
+                        ) : (
+                            'Submit'
+                        )}
                     </button>
                 </div>
             </form>

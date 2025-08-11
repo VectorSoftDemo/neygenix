@@ -33,17 +33,16 @@ export default function Header() {
       <div className="max-w-full  px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20 xl:h-24">
           {/* Logo (not a link), with image */}
-          <div className="flex items-center flex-shrink-0 select-none cursor-pointer">
+          <div className="flex flex-row items-center flex-shrink-0 select-none cursor-pointer">
             <Image
               src="/logo.webp"
               alt="Neugenix Logo"
-              width={120}     // Replace with your image's natural width
-              height={80}     // Replace with your image's natural height
-            
-              priority={true} // Optional: if this is a key image you want to load ASAP
-              className="object-contain"
+              width={80}
+              height={80}
+              priority={true}
+              className="object-contain w-16 h-16 md:w-[60px] md:h-[60px] lg:w-[80px] lg:h-[80px]"
             />
-            <span className="text-xl md:text-2xl lg:text-3xl font-bold text-black hover:text-green-700 transition-colors duration-200 ml-2">
+            <span className=" text-lg md:text-2xl lg:text-3xl font-bold text-black hover:text-green-700 transition-colors duration-200">
               NEUGENIX
             </span>
           </div>

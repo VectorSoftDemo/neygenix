@@ -45,7 +45,7 @@ export default function ServicesSection() {
                 ))}
               </ul>
               <button className="mt-6 bg-[#65bc7b] text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors">
-                Learn More
+                Learn More about our services
               </button>
             </div>
           ))}

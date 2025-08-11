@@ -87,7 +87,7 @@ export default function Home() {
               href="#1"
               className="bg-[#2F7A2F] hover:bg-green-700 transition-colors text-white font-semibold px-4 xs:px-6 sm:px-8 py-2 xs:py-2.5 sm:py-3 rounded-3xl text-sm xs:text-base sm:text-lg xl:text-2xl shadow-md inline-block"
             >
-              Learn More
+              Learn More about Neugenix
             </Link>
 
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
               href="/services"
               className="bg-[#2E7D32] text-white px-4 xs:px-6 py-2 sm:px-8 sm:py-3 rounded-3xl font-semibold hover:bg-green-700 transition-colors text-sm xs:text-base sm:text-lg xl:text-xl focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
             >
-              Learn More
+              See Services
             </Link>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function Home() {
                 href={item.href}
                 className="mt-2 bg-[#2E7D32] hover:bg-green-700 transition-colors text-white font-semibold px-4 xs:px-6 py-2 sm:px-8 sm:py-2 rounded-2xl text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl inline-block text-center focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
               >
-                Learn More
+                Explore Services
               </Link>
 
             </div>
@@ -373,7 +373,7 @@ export default function Home() {
               href="/blog"
               className="bg-[#424492] text-white px-5 py-2 rounded-md font-semibold w-fit text-base sm:text-lg md:text-xl xl:text-2xl hover:bg-[#35356e] transition-colors"
             >
-              Read More
+              Read More Blogs
             </Link>
           </div>
         </div>

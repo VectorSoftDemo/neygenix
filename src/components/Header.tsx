@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -33,13 +34,16 @@ export default function Header() {
         <div className="flex justify-between items-center h-16 lg:h-20 xl:h-24">
           {/* Logo (not a link), with image */}
           <div className="flex items-center flex-shrink-0 select-none cursor-pointer">
-            <img
+            <Image
               src="/logo.webp"
               alt="Neugenix Logo"
-              className="h-8 w-12 md:h-10 md:w-15 lg:h-12 lg:w-18 "
-              draggable={false}
+              width={120}     // Replace with your image's natural width
+              height={80}     // Replace with your image's natural height
+            
+              priority={true} // Optional: if this is a key image you want to load ASAP
+              className="object-contain"
             />
-            <span className="text-xl md:text-2xl lg:text-3xl font-bold text-black hover:text-green-700 transition-colors duration-200">
+            <span className="text-xl md:text-2xl lg:text-3xl font-bold text-black hover:text-green-700 transition-colors duration-200 ml-2">
               NEUGENIX
             </span>
           </div>

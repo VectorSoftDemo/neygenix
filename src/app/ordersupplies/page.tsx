@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 // Type definitions
 interface NestedSection {
@@ -146,15 +147,26 @@ const OrderSupply = () => {
         setIsSubmitting(true);
 
         // Simulate API call
-        try {
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            console.log('Form submitted:', formData);
-            alert('Order request submitted successfully!');
-        } catch (error) {
-            alert('Error submitting form. Please try again.');
+       try {
+            const res = await fetch("/api/sendorder", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await res.json();
+            if (result.success) {
+
+                toast.success("Order request submitted successfully!", { icon: "✅", });
+            } else {
+                toast.error("Error: " + result.message, { icon: "❌", });
+            }
+        } catch {
+           toast.error("Error sending email. Please try again.", { icon: "❌", });
         } finally {
             setIsSubmitting(false);
         }
+
     };
 
     const accountFields = [
@@ -169,42 +181,42 @@ const OrderSupply = () => {
     ];
 
     return (
-        <main className="min-h-screen mt-16 lg:mt-20 xl:mt-25  py-8 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-                <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12">
-                    <div className="text-center mb-12">
-                        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+        <main className="min-h-screen mt-11 lg:mt-20 ">
+            <div className="max-w-6xl mx-1 md:mx-auto lg:my-2">
+                <div className="bg-white rounded-3xl shadow-2xl p-3 sm:p-6 md:p-8 lg:p-12">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#144afc] mb-2 sm:mb-4">
                             Supply Order Request
                         </h1>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
                             Fill out this form to request your laboratory supplies and testing materials
                         </p>
                     </div>
 
-                    <div className="space-y-12">
+                    <div className="space-y-6 sm:space-y-12">
                         {/* Account Information */}
-                        <div className="bg-gray-50 rounded-2xl p-6 sm:p-8">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 flex items-center">
-                                <div className="bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-white text-lg font-bold mr-4">1</div>
+                        <div className="bg-gray-50 rounded-2xl p-2 sm:p-6 md:p-8">
+                            <h2 className="text-base xs:text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 xs:mb-4 sm:mb-8 flex items-center">
+                                <div className="bg-blue-600 rounded-full w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 flex items-center justify-center text-white text-xs xs:text-sm sm:text-base md:text-lg font-bold mr-2 xs:mr-3 sm:mr-4">1</div>
                                 Account Information
                             </h2>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 xs:gap-4 sm:gap-6">
                                 {accountFields.map(({ name, placeholder, type }) => (
-                                    <div key={name} className="space-y-2">
+                                    <div key={name} className="space-y-1 xs:space-y-2">
                                         <input
                                             type={type}
                                             name={name}
                                             placeholder={placeholder}
                                             value={formData[name as keyof FormData] as string}
                                             onChange={handleInputChange}
-                                            className={`w-full px-4 py-4 rounded-xl border-2 text-lg transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-blue-200 ${errors[name]
+                                            className={`w-full px-2 xs:px-3 sm:px-4 py-2 xs:py-3 sm:py-4 rounded-xl border-2 text-xs xs:text-sm sm:text-base md:text-lg transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-blue-200 ${errors[name]
                                                     ? 'border-red-500 bg-red-50 focus:border-red-500'
                                                     : 'border-gray-200 bg-white hover:border-blue-300 focus:border-blue-500'
                                                 }`}
                                         />
                                         {errors[name] && (
-                                            <p className="text-red-500 text-sm font-medium">{errors[name]}</p>
+                                            <p className="text-red-500 text-xs xs:text-sm font-medium">{errors[name]}</p>
                                         )}
                                     </div>
                                 ))}
@@ -277,17 +289,38 @@ const OrderSupply = () => {
                         />
 
                         {/* Delivery Section */}
-                        <article className="bg-gray-50 rounded-2xl p-6 sm:p-8">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 flex items-center">
-                                <div className="bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-white text-lg font-bold mr-4">6</div>
+                        {/* Delivery Section */}
+                        <article
+                            className="bg-gray-50 rounded-2xl p-2 sm:p-6 md:p-8"
+                            aria-labelledby="deliverySectionTitle"
+                        >
+                            {/* Section heading */}
+                            <h2
+                                id="deliverySectionTitle"
+                                className="text-base xs:text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 xs:mb-4 sm:mb-8 flex items-center"
+                            >
+                                <div className="bg-blue-600 rounded-full w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 flex items-center justify-center text-white text-xs xs:text-sm sm:text-base md:text-lg font-bold mr-2 xs:mr-3 sm:mr-4">
+                                    6
+                                </div>
                                 Delivery Method
                             </h2>
 
+                            {/* Accessible label */}
+                            <label
+                                htmlFor="deliveryMethod"
+                                className="block mb-2 text-sm font-medium text-gray-700"
+                            >
+                                Shipping Method <span className="text-red-500">*</span>
+                            </label>
+
+                            {/* Select dropdown */}
                             <select
+                                id="deliveryMethod"
                                 name="deliveryMethod"
                                 value={formData.deliveryMethod}
                                 onChange={handleInputChange}
-                                className="w-full sm:w-80 px-4 py-4 rounded-xl border-2 border-gray-200 bg-white text-lg focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition-all duration-200"
+                                required
+                                className="w-full sm:w-80 px-2 xs:px-3 sm:px-4 py-2 xs:py-3 sm:py-4 rounded-xl border-2 border-gray-200 bg-white text-xs xs:text-sm sm:text-base md:text-lg focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition-all duration-200"
                             >
                                 <option value="">Select Shipping Method</option>
                                 <option value="Standard">Standard Shipping</option>
@@ -296,10 +329,11 @@ const OrderSupply = () => {
                             </select>
                         </article>
 
+
                         {/* Message Section */}
-                        <article className="bg-gray-50 rounded-2xl p-6 sm:p-8">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 flex items-center">
-                                <div className="bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-white text-lg font-bold mr-4">7</div>
+                        <article className="bg-gray-50 rounded-2xl p-2 sm:p-6 md:p-8">
+                            <h2 className="text-base xs:text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 xs:mb-4 sm:mb-8 flex items-center">
+                                <div className="bg-blue-600 rounded-full w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 flex items-center justify-center text-white text-xs xs:text-sm sm:text-base md:text-lg font-bold mr-2 xs:mr-3 sm:mr-4">7</div>
                                 Additional Notes
                             </h2>
 
@@ -308,49 +342,41 @@ const OrderSupply = () => {
                                 value={formData.message}
                                 onChange={handleInputChange}
                                 rows={4}
-                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 bg-white text-lg focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition-all duration-200 resize-none"
+                                className="w-full px-2 xs:px-3 sm:px-4 py-2 xs:py-3 sm:py-4 rounded-xl border-2 border-gray-200 bg-white text-xs xs:text-sm sm:text-base md:text-lg focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500 transition-all duration-200 resize-none"
                                 placeholder="Any special instructions or additional information..."
                             />
                         </article>
 
                         {/* Submit Section */}
-                        <article className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-6 sm:p-8 text-center">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+                        <article className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-3 sm:p-6 md:p-10 text-center shadow-xl flex flex-col items-center">
+                            <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 xs:mb-4 sm:mb-8 drop-shadow-lg">
                                 Ready to Submit Your Order?
                             </h2>
 
-                            <div className="space-y-6 space-x-4">
-                                {/* Mock reCAPTCHA */}
-                                <div className="inline-flex items-center space-x-3 bg-white rounded-lg p-4">
-                                    <input
-                                        type="checkbox"
-                                        id="recaptcha"
-                                        className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500"
-                                    />
-                                    <label htmlFor="recaptcha" className="text-gray-700 font-medium">
-                                        I'm not a robot
-                                    </label>
-                                    <div className="text-xs text-gray-500">reCAPTCHA</div>
-                                </div>
-
+                            <div className="w-full flex flex-col items-center gap-4 sm:gap-6">
+                                {/* Optionally, you can add a real reCAPTCHA here in the future */}
                                 <button
                                     type="button"
                                     onClick={handleSubmit}
                                     disabled={isSubmitting}
-                                    className={`px-8 py-4 rounded-xl font-bold text-xl uppercase tracking-wide transition-all duration-300 transform ${isSubmitting
-                                            ? 'bg-gray-400 cursor-not-allowed'
-                                            : 'bg-white text-blue-600 hover:bg-gray-100 hover:scale-105 shadow-lg hover:shadow-xl'
-                                        }`}
+                                    className={`w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 rounded-2xl font-bold text-base sm:text-lg md:text-xl uppercase tracking-wide transition-all duration-300 transform shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-200 focus:ring-offset-2 ${
+                                        isSubmitting
+                                            ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                                            : 'bg-white text-blue-700 hover:bg-blue-50 hover:scale-105 hover:shadow-2xl'
+                                    }`}
                                 >
                                     {isSubmitting ? (
-                                        <div className="flex items-center space-x-2">
-                                            <div className="animate-spin rounded-full h-5 w-5 border-2 border-blue-600 border-t-transparent"></div>
+                                        <span className="flex items-center justify-center gap-2">
+                                            <span className="inline-block animate-spin rounded-full h-5 w-5 border-2 border-white border-t-blue-600"></span>
                                             <span>Submitting...</span>
-                                        </div>
+                                        </span>
                                     ) : (
                                         'Submit Order Request'
                                     )}
                                 </button>
+                                <p className="text-xs sm:text-sm text-white/80 mt-2">
+                                    Please review your order before submitting. You will receive a confirmation email.
+                                </p>
                             </div>
                         </article>
                     </div>
@@ -369,27 +395,30 @@ const Section = ({
     onChange,
     sectionNumber
 }: SectionProps & { sectionNumber: number }) => (
-    <div className="bg-gray-50 rounded-2xl p-6 sm:p-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 flex items-center">
-            <div className="bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-white text-lg font-bold mr-4">
+    <div className="bg-gray-50 rounded-2xl p-2 sm:p-6 md:p-8">
+        <h2 className="text-base xs:text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 xs:mb-4 sm:mb-8 flex items-center">
+            <div className="bg-blue-600 rounded-full w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 flex items-center justify-center text-white text-xs xs:text-sm sm:text-base md:text-lg font-bold mr-2 xs:mr-3 sm:mr-4">
                 {sectionNumber}
             </div>
             {title}
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-6">
             {inputs.map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
-                    <div className="space-y-3">
-                        <h3 className="text-lg font-semibold text-gray-900">{item.label}</h3>
+                <div
+                    key={i}
+                    className="bg-white rounded-xl p-3 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-200"
+                >
+                    <div className="space-y-1 xs:space-y-2 sm:space-y-3">
+                        <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900">{item.label}</h3>
 
                         {item.note && (
-                            <p className="text-sm text-gray-600 bg-blue-50 p-2 rounded-lg font-mono">
+                            <p className="text-xs sm:text-sm text-gray-600 p-2 rounded-lg font-mono">
                                 {item.note}
                             </p>
                         )}
 
-                        <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+                        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-start sm:items-center">
                             <input
                                 type={item.type || 'text'}
                                 name={item.label}
@@ -398,13 +427,12 @@ const Section = ({
                                 }
                                 onChange={(e) => onChange(e, sectionKey, item.label)}
                                 placeholder="Quantity"
-                                className="flex-1 sm:w-32 px-3 py-2 rounded-lg border-2 border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 transition-all duration-200"
+                                className="flex-1 sm:w-32 px-2 xs:px-3 sm:px-3 py-2 xs:py-2.5 sm:py-2.5 rounded-lg border-2 border-gray-200 bg-white text-xs xs:text-sm sm:text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-500 transition-all duration-200"
                             />
 
-
                             {item.price && (
-                                <div className="bg-green-50 px-3 py-2 rounded-lg border border-green-200">
-                                    <span className="text-green-800 font-semibold text-sm">{item.price}</span>
+                                <div className="bg-green-50 px-2 xs:px-2.5 sm:px-3 py-1.5 xs:py-2 sm:py-2 rounded-lg border border-green-200">
+                                    <span className="text-green-800 font-semibold text-xs sm:text-sm">{item.price}</span>
                                 </div>
                             )}
                         </div>

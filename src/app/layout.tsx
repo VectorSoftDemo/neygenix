@@ -3,8 +3,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 
+import Image from "next/image";
+
 export const metadata = {
-  title: "Neugenix ",
+  title: "Neugenix",
   description:
     "Neugenix Global Health delivers innovative, patient-focused healthcare solutions. Contact us for personalized medical support, client services, and wellness expertise.",
   keywords: [
@@ -22,17 +24,20 @@ export const metadata = {
   ],
   authors: [{ name: "Neugenix Global Health", url: "https://neugenix.com" }],
   creator: "Neugenix Global Health",
+  icons: {
+    icon: "/logo.webp" // path relative to /public
+  },
   openGraph: {
-    title: "Neugenix Global Health ",
+    title: "Neugenix Global Health",
     description:
       "Neugenix Global Health delivers innovative, patient-focused healthcare solutions. Contact us for personalized medical support, client services, and wellness expertise.",
     url: "https://neugenix.com",
     siteName: "Neugenix Global Health",
-
     locale: "en_US",
     type: "website"
   }
 };
+
 
 export default function RootLayout({
   children,

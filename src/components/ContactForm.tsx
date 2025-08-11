@@ -60,43 +60,56 @@ export default function ContactDetails() {
 
     return (
         <section className="w-full max-w-4xl mx-auto rounded-xl p-3 sm:p-5 mt-8 bg-[#f9f9f9] shadow-md">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 text-center text-[#144afc]">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-6 text-center text-[#144afc]">
                 Contact Us
             </h2>
+
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+                {/* Name */}
                 <div>
-                    <label className="block font-semibold mb-1">Name * :</label>
+                    <label htmlFor="name" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
+                        Name * :
+                    </label>
                     <input
+                        id="name"
                         type="text"
                         name="name"
                         required
                         placeholder="Enter your name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base md:text-lg"
                         disabled={submitting}
                     />
                 </div>
 
+                {/* Date of Birth */}
                 <div>
-                    <label className="block font-semibold mb-1">Date of Birth :</label>
+                    <label htmlFor="dob" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
+                        Date of Birth :
+                    </label>
                     <input
+                        id="dob"
                         type="date"
                         name="dob"
                         value={formData.dob}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 text-sm sm:text-base md:text-lg"
                         disabled={submitting}
                     />
                 </div>
 
+                {/* Gender */}
                 <div>
-                    <label className="block font-semibold mb-1">Gender :</label>
+                    <label htmlFor="gender" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
+                        Gender :
+                    </label>
                     <select
+                        id="gender"
                         name="gender"
                         value={formData.gender}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 text-sm sm:text-base md:text-lg"
                         disabled={submitting}
                     >
                         <option value="" disabled>
@@ -108,53 +121,64 @@ export default function ContactDetails() {
                     </select>
                 </div>
 
+                {/* Phone Number */}
                 <div>
-                    <label className="block font-semibold mb-1">Phone Number* :</label>
+                    <label htmlFor="phone" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
+                        Phone Number* :
+                    </label>
                     <input
+                        id="phone"
                         type="tel"
                         name="phone"
                         required
                         placeholder="Enter your phone number"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 text-sm sm:text-base md:text-lg"
                         disabled={submitting}
                     />
                 </div>
 
+                {/* Email */}
                 <div>
-                    <label className="block font-semibold mb-1">Email Address * :</label>
+                    <label htmlFor="email" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
+                        Email Address * :
+                    </label>
                     <input
+                        id="email"
                         type="email"
                         name="email"
                         required
                         placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300"
+                        className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 text-sm sm:text-base md:text-lg"
                         disabled={submitting}
                     />
                 </div>
 
+                {/* Message */}
                 <div>
-                    <label className="block font-semibold mb-1">
+                    <label htmlFor="message" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
                         Message / Reason For Contact * :
                     </label>
                     <textarea
+                        id="message"
                         name="message"
                         required
                         placeholder="Enter your message"
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 bg-white rounded-lg min-h-[80px] text-black border border-gray-300"
+                        className="w-full px-4 py-2 bg-white rounded-lg min-h-[80px] text-black border border-gray-300 text-sm sm:text-base md:text-lg"
                         disabled={submitting}
                     />
                 </div>
 
+                {/* Submit Button */}
                 <div className="flex justify-center">
                     <button
                         type="submit"
-                        className="bg-[#46A941] hover:bg-[#3e8d39] text-white font-semibold px-6 py-2 rounded transition-all duration-200 flex items-center justify-center min-w-[120px]"
+                        className="bg-[#2F7E2A] hover:bg-[#276B24] text-white font-semibold px-6 py-2 rounded transition-all duration-200 flex items-center justify-center min-w-[120px] text-sm sm:text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
                         disabled={submitting}
                     >
                         {submitting ? (
@@ -186,7 +210,9 @@ export default function ContactDetails() {
                         )}
                     </button>
                 </div>
+
             </form>
         </section>
+
     );
 }

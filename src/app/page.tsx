@@ -248,7 +248,7 @@ export default function Home() {
         </div>
 
         {/* Right image (unchanged size) */}
-        <div className="hidden md:flex w-full lg:w-1/2 mt-6 lg:mt-0 justify-end items-center">
+        <div className="hidden lg:flex w-full lg:w-1/2 mt-6 lg:mt-0 justify-end items-center">
           <Image
             src="halflogo.webp"
             alt="Culture Visual"

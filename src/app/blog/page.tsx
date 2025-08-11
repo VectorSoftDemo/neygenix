@@ -131,11 +131,9 @@ const Blog = ()=>{
             <section
                 className="
                     w-full max-w-full
-                    grid grid-cols-1
-                    sm:grid-cols-2
-                    md:grid-cols-3
+                    grid grid-cols-1 lg:grid-cols-3
                     gap-x-6 sm:gap-x-7 md:gap-x-8
-                     md:gap-y-8
+                    gap-y-4 md:gap-y-8
                     mt-2 md:mt-12
                     px-1 md:px-4 lg:px-6
                 "
@@ -146,13 +144,14 @@ const Blog = ()=>{
                 {blogPosts.map((post, idx) => (
                     <div
                         key={idx}
-                        className="
+                        className={`
                             flex flex-col sm:flex-row
                             bg-white rounded-xl shadow
                             hover:shadow-lg transition-shadow
                             p-4 sm:p-5
                             mb-2 items-center
-                        "
+                            ${'md:flex-row md:items-stretch'}
+                        `}
                     >
                         <Image
                             src={post.image}
@@ -160,15 +159,15 @@ const Blog = ()=>{
                             priority
                             width={120}
                             height={110}
-                            className="
+                            className={`
                                 w-full sm:w-[120px]
-                                h-[180px] sm:h-[70px] md:h-[90px] xl:h-[110px]
+                                h-[180px] sm:h-[70px] md:h-[110px] xl:h-[110px]
                                 object-cover rounded
                                 mb-3 sm:mb-0
                                 sm:mr-6
                                 self-center sm:self-start
                                 transition-transform duration-200 hover:scale-105 
-                            "
+                            `}
                         />
                         <div className="flex flex-col flex-1">
                             <h2 className="text-base sm:text-lg md:text-xl xl:text-2xl font-semibold text-[#23272b] mb-1 leading-snug">
@@ -189,7 +188,7 @@ const Blog = ()=>{
                     grid gap-2 md:gap-5
                     md:mt-12 sm:mt-16 py-4
                     px-2 sm:px-4 md:px-6
-                    grid-cols-1 sm:grid-cols-2
+                    grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2
                 "
             >
                 <h2 className="col-span-full text-xl sm:text-2xl md:text-2xl xl:text-5xl font-bold text-[#144afc] mb-4 text-left">
@@ -198,29 +197,33 @@ const Blog = ()=>{
                 {extraPosts.map((post, idx) => (
                     <div
                         key={idx}
-                        className="
+                        className={`
                             flex bg-white rounded-xl shadow
                             hover:shadow-lg transition-shadow
                             overflow-hidden
                             p-3 sm:p-4 md:p-6
                             gap-2
                             items-center
-                        "
+                            ${'md:flex-col md:items-start lg:flex-row lg:items-center'}
+                        `}
                     >
                         {/* Image and content */}
-                        <div className="flex flex-1 flex-col sm:flex-row gap-4 items-center">
+                        <div className={`
+                            flex flex-1 flex-col sm:flex-row gap-4 items-center
+                            ${'md:flex-row md:items-center'}
+                        `}>
                             <Image
                                 src={post.image}
                                 alt={post.title}
                                 width={220}
                                 height={130}
-                                className="
-                                    w-full sm:w-[180px] md:w-[220px]
-                                    h-[110px] md:h-[130px]
+                                className={`
+                                    w-full sm:w-[180px] md:w-[220px] lg:w-[220px]
+                                    h-[110px] md:h-[130px] lg:h-[130px]
                                     object-cover rounded-md
-                                    mb-2 sm:mb-0
-                                    self-center
-                                "
+                                    mb-2 sm:mb-0 md:mb-0
+                                    self-center md:self-start lg:self-center
+                                `}
                             />
                             <div className="flex flex-col justify-center px-0 sm:px-4 py-2 w-full">
                                 <h2 className="text-base sm:text-lg md:text-xl xl:text-2xl font-semibold text-[#23272b] mb-1 leading-snug">

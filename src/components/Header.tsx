@@ -12,7 +12,7 @@ const navItems = [
   { name: 'Services', href: '/services' },
   { name: 'Careers', href: '/careers' },
   { name: 'Order Supplies', href: '/ordersupplies' },
-  { name: 'Blog', href: '/blog' },
+  // { name: 'Blog', href: '/blog' },
   { name: 'Contact Us', href: '/contact' },
   // { name: 'User Login', href: '/login' },
 ];
@@ -36,14 +36,14 @@ export default function Header() {
         <div className="flex justify-between items-center h-16 lg:h-20 xl:h-24">
           {/* Logo (not a link), with image */}
           <div className="flex flex-row items-center flex-shrink-0 select-none cursor-pointer">
-            <Image
+            {/* <Image
               src="/logo.webp"
               alt="Neugenix Logo"
               width={80}
               height={80}
               priority={true}
               className="object-contain w-16 h-16 md:w-[60px] md:h-[60px] lg:w-[80px] lg:h-[80px]"
-            />
+            /> */}
             <span className=" text-lg md:text-2xl lg:text-3xl font-bold text-black hover:text-green-700 transition-colors duration-200">
               NEUGENIX
             </span>

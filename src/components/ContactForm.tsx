@@ -38,7 +38,7 @@ export default function ContactDetails() {
 
             const data = await res.json();
             if (res.ok) {
-                toast.success('Message sent successfully to Neugenix. Thank you!');
+                toast.success('Message sent successfully to Neugenix. Thank you!',{icon : "✅"});
                 setFormData({
                     name: '',
                     dob: '',

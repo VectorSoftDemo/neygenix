@@ -24,7 +24,7 @@ export default function Home() {
       >
         {/* Background Image */}
         <Image
-          src="/Home/AEON1.webp"
+          src="/Home/AEON.webp"
           alt="Medical Laboratory Diagnostics"
           fill
           priority
@@ -70,14 +70,14 @@ export default function Home() {
             </h1>
 
             <details className="max-w-full mx-auto text-left group">
-              <summary className="cursor-pointer text-xs xs:text-sm sm:text-base md:text-lg xl:text-2xl text-white/90 hover:text-white transition-colors font-medium list-none">
+              <summary className="cursor-pointer text-sm sm:text-base md:text-lg xl:text-2xl text-white/90 hover:text-white transition-colors font-medium list-none">
                 <span>
                   The CDC reports that opioid dependency represents an escalating health crisis with 115 Americans perishing daily from overdose incidents. Drug-related adverse reactions  (ADEs) constitute a significant
                   <span className="inline group-open:hidden text-green-200 ml-3 xs:ml-5">(Read more)</span>
                   <span className="hidden group-open:inline text-green-200 ml-3 xs:ml-5">(Show less)</span>
                 </span>
               </summary>
-              <p className="mt-2 text-xs xs:text-sm sm:text-base md:text-lg xl:text-xl font-medium text-white/90">
+              <p className="mt-2 text-sm sm:text-base md:text-lg xl:text-2xl font-medium text-white/90">
                 healthcare concern  in the United States. Approximately
                 82% of American adults consume at least one pharmaceutical while 29% utilize five or more medications. ADEs result in 700,000 emergency department encounters, 120,000 hospital admissions, and 100,000 fatalities annually in the US. Furthermore, this generates over $30 billion in excess healthcare expenditures yearly.
               </p>
@@ -167,11 +167,11 @@ export default function Home() {
               img: "/Home/h3.webp",
               href: '/services/#drug-testing '
             },
-            {
-              title: "COVID-19 Testing",
-              img: "/Home/covid.webp",
-              href: '/services '
-            },
+            // {
+            //   title: "COVID-19 Testing",
+            //   img: "/Home/covid.webp",
+            //   href: '/services '
+            // },
           ].map((item, idx) => (
             <div
               key={idx}

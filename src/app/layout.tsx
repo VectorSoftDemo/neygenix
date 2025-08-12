@@ -24,9 +24,9 @@ export const metadata = {
   ],
   authors: [{ name: "Neugenix Global Health", url: "https://neugenix.com" }],
   creator: "Neugenix Global Health",
-  icons: {
-    icon: "/logo.webp" // path relative to /public
-  },
+  // icons: {
+  //   icon: "/logo.webp" // path relative to /public
+  // },
   openGraph: {
     title: "Neugenix Global Health",
     description:

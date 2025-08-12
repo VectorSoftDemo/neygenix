@@ -19,7 +19,7 @@ export default function ServicesPage() {
             type: "dark",
             title: (
                 <>
-                    PGX Advantage<sup className="text-sm">TM</sup> &mdash; Pharmacogenomics Testing
+                    PGX Advantage Pharmacogenomics Testing
                 </>
             ),
             short:
@@ -41,7 +41,7 @@ export default function ServicesPage() {
             gradient: false,
         },
         {
-            title: "TOX Advantage TM",
+            title: "-------",
             subTitle: "Toxicology Testing",
             shortText:
                 "Neugenix provides physicians with advanced tools to track adherence, diversion, and effectiveness through toxicology testing. Using urine or oral fluid specimens, TOX Advantage delivers ",

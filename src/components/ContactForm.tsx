@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 export default function ContactDetails() {
     const [formData, setFormData] = useState({
         name: '',
-        dob: '',
+        Date_Of_Birth: '',
         gender: '',
         phone: '',
         email: '',
@@ -25,34 +25,81 @@ export default function ContactDetails() {
         }));
     };
 
+    // const handleSubmit = async (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     setSubmitting(true);
+
+    //     try {
+    //         const res = await fetch('/api/sendemail', {
+    //             method: 'POST',
+    //             headers: { 'Content-Type': 'application/json' },
+    //             body: JSON.stringify(formData),
+    //         });
+
+    //         const data = await res.json();
+    //         if (res.ok) {
+    //             toast.success('Message sent successfully to Neugenix. Thank you!',{icon : "✅"});
+    //             setFormData({
+    //                 name: '',
+    //                 Date_Of_Birth: '',
+    //                 gender: '',
+    //                 phone: '',
+    //                 email: '',
+    //                 message: '',
+    //             });
+    //         } else {
+    //             toast.error(data.error || 'Failed to send message, try again later');
+    //         }
+    //     } catch (error) {
+    //         console.error(error);
+    //         toast.error('Something went wrong, try again later');
+    //     } finally {
+    //         setSubmitting(false);
+    //     }
+    // };
+
+
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setSubmitting(true);
 
         try {
-            const res = await fetch('/api/sendemail', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
+            const payload = {
+                access_key: "1d7937a4-9436-4169-8332-b7170efba274", // Replace with your actual access key
+                name: formData.name,
+                Date_Of_Birth: formData.Date_Of_Birth || "",
+                gender: formData.gender || "",
+                phone: formData.phone,
+                email: formData.email,
+                message: formData.message,
+                subject: "New message from Neugenix website",
+            };
+
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
             });
 
             const data = await res.json();
-            if (res.ok) {
-                toast.success('Message sent successfully to Neugenix. Thank you!',{icon : "✅"});
+
+            if (data.success) {
+                toast.success("Message sent successfully to Neugenix. Thank you!", { icon: "✅" });
                 setFormData({
-                    name: '',
-                    dob: '',
-                    gender: '',
-                    phone: '',
-                    email: '',
-                    message: '',
+                    name: "",
+                    Date_Of_Birth: "",
+                    gender: "",
+                    phone: "",
+                    email: "",
+                    message: "",
                 });
             } else {
-                toast.error(data.error || 'Failed to send message, try again later');
+                toast.error(data.message || "Failed to send message, try again later");
             }
         } catch (error) {
             console.error(error);
-            toast.error('Something went wrong, try again later');
+            toast.error("Something went wrong, try again later");
         } finally {
             setSubmitting(false);
         }
@@ -85,14 +132,14 @@ export default function ContactDetails() {
 
                 {/* Date of Birth */}
                 <div>
-                    <label htmlFor="dob" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
+                    <label htmlFor="Date_Of_Birth" className="block font-semibold mb-1 text-sm sm:text-base md:text-lg lg:text-xl">
                         Date of Birth :
                     </label>
                     <input
-                        id="dob"
+                        id="Date_Of_Birth"
                         type="date"
-                        name="dob"
-                        value={formData.dob}
+                        name="Date_Of_Birth"
+                        value={formData.Date_Of_Birth}
                         onChange={handleChange}
                         className="w-full px-4 py-2 bg-white rounded-lg text-black border border-gray-300 text-sm sm:text-base md:text-lg"
                         disabled={submitting}

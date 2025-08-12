@@ -63,9 +63,9 @@ export default function Home() {
 
           <div className="space-y-3 xs:space-y-4 sm:space-y-6 w-full">
             <h1 className="text-lg xs:text-xl sm:text-3xl md:text-5xl xl:text-6xl font-bold leading-tight xs:leading-tight sm:leading-snug drop-shadow-lg">
-              We Have The TOX Advantage
+              We Have The 
               <sup className="text-base xs:text-lg sm:text-2xl md:text-4xl align-super ml-1">
-                TM
+                
               </sup>
             </h1>
 
@@ -369,12 +369,12 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center xl:justify-start mt-2">
-            <Link
+            {/* <Link
               href="/blog"
               className="bg-[#424492] text-white px-5 py-2 rounded-md font-semibold w-fit text-base sm:text-lg md:text-xl xl:text-2xl hover:bg-[#35356e] transition-colors"
             >
               Read More Blogs
-            </Link>
+            </Link> */}
           </div>
         </div>
 

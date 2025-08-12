@@ -174,30 +174,112 @@ const OrderSupply = () => {
         return Object.keys(newErrors).length === 0;
     };
 
+
+    // FOR NODEMAILER USE THIS 
+    // const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    //     e.preventDefault();
+
+    //     if (!validateForm()) {
+    //         setErrorMessage("Please correct the form errors before submitting");
+    //         // setShowErrorToast(true);
+    //         return;
+    //     }
+
+    //     setIsSubmitting(true);
+
+    //     try {
+
+    //         const res = await fetch("/api/sendorder", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //                 "Accept": "application/json"
+    //             },
+    //             body: JSON.stringify(formData),
+    //         });
+
+
+    //         // Check if response is ok
+    //         if (!res.ok) {
+    //             throw new Error(`HTTP error! status: ${res.status}`);
+    //         }
+
+    //         const result = await res.json();
+
+    //         if (result.success) {
+    //             toast.success('Message sent successfully to Neugenix. Thank you!', { icon: "✅" });
+
+    //             // Reset form after successful submission
+    //             setFormData({
+    //                 accountName: '',
+    //                 phone: '',
+    //                 email: '',
+    //                 confirmEmail: '',
+    //                 address: '',
+    //                 city: '',
+    //                 state: '',
+    //                 zipCode: '',
+    //                 deliveryMethod: '',
+    //                 message: '',
+    //                 recaptcha: '',
+    //                 supplies: {},
+    //                 drugTestCups: {},
+    //                 drugTestDipCards: {},
+    //                 otherItems: {},
+    //             });
+    //         } else {
+    //             setErrorMessage(result.message || "Unknown error occurred");
+    //             // setShowErrorToast(true);
+    //             toast.error("Something went wrong",{icon : '❌'})
+    //         }
+    //     } catch (error) {
+    //         // console.error('Submit error:', error);
+    //         let errorMsg = "Error sending order request. Please try again.";
+
+    //         if (error instanceof Error) {
+    //             errorMsg = `Error: ${error.message}`;
+    //         }
+
+    //         setErrorMessage(errorMsg);
+    //         // setShowErrorToast(true);
+    //         toast.error("Error occured , try again later", { icon: '❌' })
+    //     } finally {
+    //         setIsSubmitting(false);
+    //     }
+    // };
+
+
+
+    //FOR WEB3FORMS USE THIS
     const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
 
         if (!validateForm()) {
             setErrorMessage("Please correct the form errors before submitting");
-            // setShowErrorToast(true);
+            toast.error("Please correct the form errors before submitting", { icon: "❌" });
             return;
         }
 
         setIsSubmitting(true);
 
         try {
+            const payload = {
+                access_key: "1d7937a4-9436-4169-8332-b7170efba274", // Your actual Web3Forms access key
+                subject: "New message from Neugenix website",
+                ...formData,
+            };
 
-            const res = await fetch("/api/sendorder", {
+            // Optionally adjust fields like supplies, drugTestCups, etc. before sending,
+            // if needed convert complex objects to strings or flatten them
+
+            const res = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Accept": "application/json"
                 },
-                body: JSON.stringify(formData),
+                body: JSON.stringify(payload),
             });
 
-
-            // Check if response is ok
             if (!res.ok) {
                 throw new Error(`HTTP error! status: ${res.status}`);
             }
@@ -205,46 +287,41 @@ const OrderSupply = () => {
             const result = await res.json();
 
             if (result.success) {
-                toast.success('Message sent successfully to Neugenix. Thank you!', { icon: "✅" });
-
-                // Reset form after successful submission
+                toast.success("Message sent successfully to Neugenix. Thank you!", { icon: "✅" });
                 setFormData({
-                    accountName: '',
-                    phone: '',
-                    email: '',
-                    confirmEmail: '',
-                    address: '',
-                    city: '',
-                    state: '',
-                    zipCode: '',
-                    deliveryMethod: '',
-                    message: '',
-                    recaptcha: '',
+                    accountName: "",
+                    phone: "",
+                    email: "",
+                    confirmEmail: "",
+                    address: "",
+                    city: "",
+                    state: "",
+                    zipCode: "",
+                    deliveryMethod: "",
+                    message: "",
+                    recaptcha: "",
                     supplies: {},
                     drugTestCups: {},
                     drugTestDipCards: {},
                     otherItems: {},
                 });
+                setErrorMessage("");
             } else {
                 setErrorMessage(result.message || "Unknown error occurred");
-                // setShowErrorToast(true);
-                toast.error("Something went wrong",{icon : '❌'})
+                toast.error(result.message || "Something went wrong", { icon: "❌" });
             }
         } catch (error) {
-            // console.error('Submit error:', error);
             let errorMsg = "Error sending order request. Please try again.";
-
             if (error instanceof Error) {
                 errorMsg = `Error: ${error.message}`;
             }
-
             setErrorMessage(errorMsg);
-            // setShowErrorToast(true);
-            toast.error("Error occured , try again later", { icon: '❌' })
+            toast.error("Error occurred, try again later", { icon: "❌" });
         } finally {
             setIsSubmitting(false);
         }
     };
+
 
     const accountFields = [
         { name: 'accountName', placeholder: 'Account Name', type: 'text' },

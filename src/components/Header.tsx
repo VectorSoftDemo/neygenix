@@ -31,7 +31,7 @@ export default function Header() {
   return (
     
     // <nav className="bg-gradient-to-r from-[#6a9dd6] via-[#7bb6f7] to-[#b3d8f7] shadow-2xl fixed top-0 z-50 backdrop-blur-md w-full h-20 md:h-24 xl:h-28">
-    <nav className="bg-gradient-to-r from-[#5ebb59] via-[#a3e29f] to-[#83c4a3] shadow-2xl fixed top-0 z-50 backdrop-blur-md w-full h-20 md:h-24 xl:h-28">
+    <nav className="bg-gradient-to-r from-[#5ebb59] via-[#a3e29f] to-[#83c4a3] shadow-2xl fixed top-0 z-50 backdrop-blur-md w-full h-15 md:h-18 xl:h-24">
       <div className="max-w-full  px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20 xl:h-24">
           {/* Logo (not a link), with image */}

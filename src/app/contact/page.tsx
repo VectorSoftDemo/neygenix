@@ -22,8 +22,6 @@ const ContactPage = () => {
                 </p>
             </article>
 
-
-
             {/* Contact Form / Details */}
             <ContactDetails />
 

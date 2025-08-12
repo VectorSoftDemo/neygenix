@@ -9,18 +9,18 @@ body {
 html {
   /* For Firefox */
   scrollbar-width: thin;
-  scrollbar-color: #00ff22 #f5f5f5;
+  scrollbar-color: #127520 #f5f5f5;
 }
 
 /* For Chrome, Safari, Opera */
 html::-webkit-scrollbar {
-  width: 6px;
+  width:5px;
   height: 0px; /* Hide horizontal scrollbar */
-  background: #eb1f1f;
+  background: #127520;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #ec1e1e;
+  background: #127520;
   border-radius: 4px;
 }
 

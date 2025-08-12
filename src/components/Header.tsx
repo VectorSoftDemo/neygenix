@@ -29,7 +29,9 @@ export default function Header() {
   // - lg+: show all nav items inline
 
   return (
-    <nav className="bg-gradient-to-r from-[#d7ecd6] via-[#cce7da] to-[#b9ddcb] shadow-lg fixed top-0 z-50 backdrop-blur-sm w-full">
+    
+    // <nav className="bg-gradient-to-r from-[#6a9dd6] via-[#7bb6f7] to-[#b3d8f7] shadow-2xl fixed top-0 z-50 backdrop-blur-md w-full h-20 md:h-24 xl:h-28">
+    <nav className="bg-gradient-to-r from-[#5ebb59] via-[#a3e29f] to-[#83c4a3] shadow-2xl fixed top-0 z-50 backdrop-blur-md w-full h-20 md:h-24 xl:h-28">
       <div className="max-w-full  px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20 xl:h-24">
           {/* Logo (not a link), with image */}
@@ -145,7 +147,7 @@ export default function Header() {
         ? 'max-h-96 opacity-100'
         : 'max-h-0 opacity-0 overflow-hidden'
       }`}>
-        <div className="px-4 pt-2 pb-4 space-y-1 bg-white/90 backdrop-blur-sm shadow-lg border-t border-green-100">
+        <div className="px-2 pt-2 pb-4 space-y-1 bg-white backdrop-blur-sm shadow-lg border-t border-green-100">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -154,7 +156,7 @@ export default function Header() {
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
                 className={`block px-4 py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-200 ${isActive
-                  ? 'bg-green-100 text-green-800 border-l-4 border-green-600'
+                  ? 'bg-green-200 text-green-900  border-green-600'
                   : 'text-gray-700 hover:text-green-700 hover:bg-green-50 hover:translate-x-1'
                 }`}
               >

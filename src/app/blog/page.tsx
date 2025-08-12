@@ -216,6 +216,7 @@ const Blog = ()=>{
                                 src={post.image}
                                 alt={post.title}
                                 width={220}
+                                priority
                                 height={130}
                                 className={`
                                     w-full sm:w-[180px] md:w-[220px] lg:w-[220px]

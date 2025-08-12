@@ -49,12 +49,12 @@ export default function Footer() {
           {/* Right: News Section */}
           <div className="flex-1 min-w-0 flex flex-col gap-4 sm:gap-6">
             <NewsItem
-              img="https://aeonglobalhealth.com/wp-content/uploads/2020/10/gravity-diagnostics-featured-image-2-177x142.jpg"
+              img="Footer/f1.webp"
               title="Neugenix Global Health Acknowledged as Pioneers in Cancer Genomics and Receives GHP Award"
               summary="GHP Reveals the 2019 Biotechnology Awards Recipients. Neugenix Global Health Corp. was acknowledged as 'Pioneers in Cancer Genomics Diagnostics 2019'."
             />
             <NewsItem
-              img="https://aeonglobalhealth.com/wp-content/uploads/2020/10/ahs10887-1024x576-1-177x142.jpg"
+              img="Footer/f2.webp"
               title="Authentidate Declares Corporate Rebranding To Neugenix Global Health Corp"
               summary="Authentidate Holding Corp. finalized its rebranding to Neugenix Global Health Corp. New trading symbol AGHC is now active."
             />

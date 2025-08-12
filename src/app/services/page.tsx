@@ -41,7 +41,7 @@ export default function ServicesPage() {
             gradient: false,
         },
         {
-            title: "-------",
+            title: "Advantage Toxicology Testing",
             subTitle: "Toxicology Testing",
             shortText:
                 "Neugenix provides physicians with advanced tools to track adherence, diversion, and effectiveness through toxicology testing. Using urine or oral fluid specimens, TOX Advantage delivers ",

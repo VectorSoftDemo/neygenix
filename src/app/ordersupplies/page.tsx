@@ -46,41 +46,6 @@ interface SectionProps {
 }
 
 
-
-// Success Toast Component
-// const SuccessToast = ({ isVisible, onClose }: { isVisible: boolean; onClose: () => void }) => {
-//     if (!isVisible) return null;
-
-//     return (
-//         <div className="fixed top-4 right-4 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg z-50 flex items-center space-x-3 animate-slide-in">
-//             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-//                 <span className="text-green-500 font-bold text-sm">✓</span>
-//             </div>
-//             <span className="font-semibold">Order request submitted successfully!</span>
-//             <button onClick={onClose} className="ml-4 text-white hover:text-gray-200">
-//                 ×
-//             </button>
-//         </div>
-//     );
-// };
-
-// Error Toast Component
-// const ErrorToast = ({ isVisible, message, onClose }: { isVisible: boolean; message: string; onClose: () => void }) => {
-//     if (!isVisible) return null;
-
-//     return (
-//         <div className="fixed top-4 right-4 bg-red-500 text-white px-6 py-4 rounded-lg shadow-lg z-50 flex items-center space-x-3 animate-slide-in">
-//             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-//                 <span className="text-red-500 font-bold text-sm">!</span>
-//             </div>
-//             <span className="font-semibold">{message}</span>
-//             <button onClick={onClose} className="ml-4 text-white hover:text-gray-200">
-//                 ×
-//             </button>
-//         </div>
-//     );
-// };
-
 const OrderSupply = () => {
     const [formData, setFormData] = useState<FormData>({
         accountName: '',
@@ -176,6 +141,7 @@ const OrderSupply = () => {
 
 
     // FOR NODEMAILER USE THIS 
+
     // const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     //     e.preventDefault();
 
@@ -264,13 +230,10 @@ const OrderSupply = () => {
 
         try {
             const payload = {
-                access_key: "1d7937a4-9436-4169-8332-b7170efba274", // Your actual Web3Forms access key
+                access_key: "1d7937a4-9436-4169-8332-b7170efba274", // Your actual Web3Forms access key (current murthy@vectorsoft.com)
                 subject: "New message from Neugenix website",
                 ...formData,
             };
-
-            // Optionally adjust fields like supplies, drugTestCups, etc. before sending,
-            // if needed convert complex objects to strings or flatten them
 
             const res = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",

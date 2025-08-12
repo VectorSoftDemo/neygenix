@@ -1,3 +1,7 @@
+//use this file if you are sending mail using nodmailer
+// if using web3forms no need of this file
+
+
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 

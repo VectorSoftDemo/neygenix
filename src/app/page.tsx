@@ -63,10 +63,10 @@ export default function Home() {
 
           <div className="space-y-3 xs:space-y-4 sm:space-y-6 w-full">
             <h1 className="text-lg xs:text-xl sm:text-3xl md:text-5xl xl:text-6xl font-bold leading-tight xs:leading-tight sm:leading-snug drop-shadow-lg">
-              We Have The 
-              <sup className="text-base xs:text-lg sm:text-2xl md:text-4xl align-super ml-1">
+              We Have The Solution You Need
+              {/* <sup className="text-base xs:text-lg sm:text-2xl md:text-4xl align-super ml-1">
                 
-              </sup>
+              </sup> */}
             </h1>
 
             <details className="max-w-full mx-auto text-left group">

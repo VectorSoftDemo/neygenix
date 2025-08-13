@@ -12,7 +12,6 @@ export default function Footer() {
               <div>
                 <p className="text-lg sm:text-2xl xl:text-2xl font-bold text-[#65bc7b] leading-tight">
                   Neugenix 
-                  {/* <br />GLOBAL HEALTH */}
                 </p>
                 <p className="text-xs sm:text-sm xl:text-lg text-gray-300 font-light">
                   Understand more. Experience wellness.
@@ -41,7 +40,7 @@ export default function Footer() {
                   href="mailto:clientservices@Neugenix.com"
                   className="text-[#65bc7b] underline hover:text-[#4a9e5e] transition-colors"
                 >
-                  raghu@neugenix.com
+                  keenan@neugenix.com
                 </a>
               </p>
             </div>
@@ -51,13 +50,13 @@ export default function Footer() {
           {/* <div className="flex-1 min-w-0 flex flex-col gap-4 sm:gap-6">
             <NewsItem
               img="Footer/f1.webp"
-              title="Neugenix Global Health Acknowledged as Pioneers in Cancer Genomics and Receives GHP Award"
-              summary="GHP Reveals the 2019 Biotechnology Awards Recipients. Neugenix Global Health Corp. was acknowledged as 'Pioneers in Cancer Genomics Diagnostics 2019'."
+              title="Neugenix  Acknowledged as Pioneers in Cancer Genomics and Receives GHP Award"
+              summary="GHP Reveals the 2019 Biotechnology Awards Recipients. Neugenix  Corp. was acknowledged as 'Pioneers in Cancer Genomics Diagnostics 2019'."
             />
             <NewsItem
               img="Footer/f2.webp"
-              title="Authentidate Declares Corporate Rebranding To Neugenix Global Health Corp"
-              summary="Authentidate Holding Corp. finalized its rebranding to Neugenix Global Health Corp. New trading symbol AGHC is now active."
+              title="Authentidate Declares Corporate Rebranding To Neugenix  Corp"
+              summary="Authentidate Holding Corp. finalized its rebranding to Neugenix  Corp. New trading symbol AGHC is now active."
             /> */}
             {/* <div className="flex flex-wrap items-center justify-center gap-2 bg-white bg-opacity-10 rounded p-4">
               <span className="text-xl text-gray-300 text-center">

@@ -2,10 +2,14 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // 👈 Static export enabled
+  output: 'export',
   images: {
-    unoptimized: true, // 👈 Disable image optimization for static hosting
+    unoptimized: true,
+    // domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
   },
-};
+  assetPrefix: '',
+  basePath: '',
+  trailingSlash: true,
+}
 
 export default nextConfig;

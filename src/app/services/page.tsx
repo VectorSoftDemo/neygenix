@@ -63,7 +63,7 @@ export default function ServicesPage() {
                 <article className="relative flex flex-col justify-center p-4 sm:p-8 text-white w-full h-[60vh] sm:h-screen">
                     {/* Background Image */}
                     <Image
-                        src="/Services/s1.webp"
+                        src="/Servicesimg/s1.webp"
                         alt="Pharmacogenomics Background"
                         fill
                         className="object-cover object-center"
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                         </h1>
                         <div className="w-full flex justify-center">
                             <Image
-                                src="img1-1.webp"
+                                src="/testing1.webp"
                                 alt="Testing Process"
                                 width={600}
                                 height={237}
@@ -143,7 +143,7 @@ export default function ServicesPage() {
                         </h1>
                         <div className="w-full flex justify-center">
                             <Image
-                                src="/Services/s11.webp"
+                                src="/Servicesimg/s11.webp"
                                 alt="Impacted Medications and Genes"
                                 width={800}
                                 height={400}
@@ -180,7 +180,7 @@ export default function ServicesPage() {
 
                 <article className="relative flex flex-col justify-center p-4 sm:p-8 text-white w-full h-[60vh] sm:h-screen">
                     <Image
-                        src="/Services/s2.webp"
+                        src="/Servicesimg/s2.webp"
                         alt="Toxicology Services Background"
                         fill
                         className="object-cover object-center z-0"
@@ -249,10 +249,11 @@ export default function ServicesPage() {
                         </h1>
                         <div className="w-full flex justify-center">
                             <Image
-                                src="img1-1.webp"
+                                src="/testing1.webp"
                                 alt="Testing Process"
                                 width={600}
                                 height={237}
+                                priority
                                 className="w-full max-w-[90vw] xs:max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl h-auto rounded-lg object-contain"
                             />
                         </div>

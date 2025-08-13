@@ -108,7 +108,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center w-full">
           <div className="w-full flex justify-center mb-3 xs:mb-4">
             <Image
-              src="/img1-1.webp"
+              src="/testing1.webp"
               alt="Toxicology Testing"
               width={400}
               height={158}
@@ -221,11 +221,11 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 xs:gap-3 sm:gap-4 lg:gap-6">
               {[
-                { label: "Diversity", src: "/About/logo1.webp" },
-                { label: "Respect", src: "/About/logo2.webp" },
-                { label: "Integrity", src: "/About/logo3.webp" },
-                { label: "Valor", src: "/About/logo4.webp" },
-                { label: "Excellence", src: "/About/logo5.webp" }
+                { label: "Diversity", src: "/Aboutus/logo1.webp" },
+                { label: "Respect", src: "/Aboutus/logo2.webp" },
+                { label: "Integrity", src: "/Aboutus/logo3.webp" },
+                { label: "Valor", src: "/Aboutus/logo4.webp" },
+                { label: "Excellence", src: "/Aboutus/logo5.webp" }
               ].map((item, idx) => (
                 <div
                   key={idx}

@@ -5,42 +5,42 @@ export default function AboutUs() {
   const images = [
 
     {
-      image: "/About/img1.webp",
+      image: "/Aboutus/img1.webp",
       title: "Blood Wellness",
     },
     {
-      image: "/About/img2.webp",
+      image: "/Aboutus/img2.webp",
       title: "Cancer Genomics",
     },
     {
-      image: "/About/img3.webp",
+      image: "/Aboutus/img3.webp",
       title: "Pharmacogenomics",
     },
     {
-      image: "/About/img4.webp",
+      image: "/Aboutus/img4.webp",
       title: "Toxicology",
     },
   ]
 
   const valueImages = [
     {
-      image: "/About/logo1.webp",
+      image: "/Aboutus/logo1.webp",
       title: "DIVERSITY",
     },
     {
-      image: "/About/logo2.webp",
+      image: "/Aboutus/logo2.webp",
       title: "RESPECT",
     },
     {
-      image: "/About/logo3.webp",
+      image: "/Aboutus/logo3.webp",
       title: "INTEGRITY",
     },
     {
-      image: "/About/logo4.webp",
+      image: "/Aboutus/logo4.webp",
       title: "VALOR",
     },
     {
-      image: "/About/logo5.webp",
+      image: "/Aboutus/logo5.webp",
       title: "EXCELLENCE",
     },
   ]
@@ -52,7 +52,7 @@ export default function AboutUs() {
       >
         {/* Background image */}
         <Image
-          src="/About/flower_image.webp"
+          src="/Aboutus/flower_image.webp"
           alt="Flower background"
           fill
           priority

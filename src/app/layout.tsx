@@ -8,10 +8,9 @@ import Image from "next/image";
 export const metadata = {
   title: "Neugenix",
   description:
-    "Neugenix Global Health delivers innovative, patient-focused healthcare solutions. Contact us for personalized medical support, client services, and wellness expertise.",
+    "Neugenix G delivers innovative, patient-focused healthcare solutions. Contact us for personalized medical support, client services, and wellness expertise.",
   keywords: [
     "Neugenix",
-    "Global Health",
     "Healthcare",
     "Patient Wellness",
     "Medical Support",
@@ -22,17 +21,17 @@ export const metadata = {
     "Patient Care",
     "Gainesville GA"
   ],
-  authors: [{ name: "Neugenix Global Health", url: "https://neugenix.com" }],
-  creator: "Neugenix Global Health",
+  authors: [{ name: "Neugenix ", url: "https://neugenix.com" }],
+  creator: "Neugenix ",
   // icons: {
   //   icon: "/logo.webp" // path relative to /public
   // },
   openGraph: {
-    title: "Neugenix Global Health",
+    title: "Neugenix ",
     description:
-      "Neugenix Global Health delivers innovative, patient-focused healthcare solutions. Contact us for personalized medical support, client services, and wellness expertise.",
+      "Neugenix  delivers innovative, patient-focused healthcare solutions. Contact us for personalized medical support, client services, and wellness expertise.",
     url: "https://neugenix.com",
-    siteName: "Neugenix Global Health",
+    siteName: "Neugenix ",
     locale: "en_US",
     type: "website"
   }

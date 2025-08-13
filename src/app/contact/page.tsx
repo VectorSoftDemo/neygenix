@@ -57,7 +57,7 @@ const ContactPage = () => {
 
                     {/* Email */}
                     <a
-                        href="mailto:raghu@neugenix.com"
+                        href="mailto:keenan@neugenix.com"
                         className="flex flex-col items-center bg-[#f1fdf1] p-3 sm:p-6 rounded-xl shadow transition hover:shadow-lg hover:bg-[#e6fbe6] cursor-pointer focus:outline-none w-full"
                         tabIndex={0}
                         aria-label="Send Email"
@@ -66,13 +66,13 @@ const ContactPage = () => {
                             <Mail color="#144afc" size={20} className="sm:w-7 sm:h-7" />
                         </div>
                         <span className="text-gray-900 font-semibold text-xs sm:text-sm md:text-xl xl:text-2xl hover:underline text-center break-all">
-                            raghu@neugenix.com
+                            keenan@neugenix.com
                         </span>
                     </a>
 
                     {/* Phone */}
                     <a
-                        href="tel:9727623120"
+                        href="tel:2147664371"
                         className="flex flex-col items-center bg-[#f1fdf1] p-3 sm:p-6 rounded-xl shadow transition hover:shadow-lg hover:bg-[#e6fbe6] cursor-pointer focus:outline-none w-full"
                         tabIndex={0}
                         aria-label="Call Phone"
@@ -81,7 +81,7 @@ const ContactPage = () => {
                             <Phone className="text-[#144afc] w-5 h-5 sm:w-7 sm:h-7" />
                         </div>
                         <span className="text-gray-900 font-semibold text-xs sm:text-lg md:text-xl xl:text-2xl hover:underline text-center">
-                            (972) 762-3120
+                            +1 (214) 766-4371 
                         </span>
                     </a>
 

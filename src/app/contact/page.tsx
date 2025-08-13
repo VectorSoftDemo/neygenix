@@ -57,7 +57,7 @@ const ContactPage = () => {
 
                     {/* Email */}
                     <a
-                        href="mailto:clientservices@Neugenix.com"
+                        href="mailto:raghu@neugenix.com"
                         className="flex flex-col items-center bg-[#f1fdf1] p-3 sm:p-6 rounded-xl shadow transition hover:shadow-lg hover:bg-[#e6fbe6] cursor-pointer focus:outline-none w-full"
                         tabIndex={0}
                         aria-label="Send Email"
@@ -66,7 +66,7 @@ const ContactPage = () => {
                             <Mail color="#144afc" size={20} className="sm:w-7 sm:h-7" />
                         </div>
                         <span className="text-gray-900 font-semibold text-xs sm:text-sm md:text-xl xl:text-2xl hover:underline text-center break-all">
-                            clientservices@Neugenix.com
+                            raghu@neugenix.com
                         </span>
                     </a>
 

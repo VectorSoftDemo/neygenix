@@ -41,7 +41,7 @@ export default function Footer() {
                   href="mailto:clientservices@Neugenix.com"
                   className="text-[#65bc7b] underline hover:text-[#4a9e5e] transition-colors"
                 >
-                  clientservices@Neugenix.com
+                  raghu@neugenix.com
                 </a>
               </p>
             </div>

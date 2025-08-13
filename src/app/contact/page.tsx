@@ -37,9 +37,9 @@ const ContactPage = () => {
                     we endeavor to create a beneficial impact in the lives of our medical practitioner clients and patients.
                 </p>
 
-                <div className="grid grid-cols-2 xs:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mt-2">
+                <div className="grid grid-cols-2 xs:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 mt-2">
                     {/* WhatsApp */}
-                    <a
+                    {/* <a
                         href="https://wa.me/6782768412"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const ContactPage = () => {
                         <span className="text-gray-900 font-semibold text-xs sm:text-lg md:text-xl xl:text-2xl hover:underline text-center">
                             Chat on WhatsApp
                         </span>
-                    </a>
+                    </a> */}
 
                     {/* Email */}
                     <a
@@ -72,7 +72,7 @@ const ContactPage = () => {
 
                     {/* Phone */}
                     <a
-                        href="tel:6782768412"
+                        href="tel:9727623120"
                         className="flex flex-col items-center bg-[#f1fdf1] p-3 sm:p-6 rounded-xl shadow transition hover:shadow-lg hover:bg-[#e6fbe6] cursor-pointer focus:outline-none w-full"
                         tabIndex={0}
                         aria-label="Call Phone"
@@ -81,13 +81,13 @@ const ContactPage = () => {
                             <Phone className="text-[#144afc] w-5 h-5 sm:w-7 sm:h-7" />
                         </div>
                         <span className="text-gray-900 font-semibold text-xs sm:text-lg md:text-xl xl:text-2xl hover:underline text-center">
-                            (678) 276-8412
+                            (972) 762-3120
                         </span>
                     </a>
 
                     {/* Address */}
                     <a
-                        href="https://www.google.com/maps/search/?api=1&query=2225+Centennial+Drive+Gainesville+GA+30504"
+                        href="https://www.google.com/maps/search/?api=1&query=11132+S+Wabash+Ave+%23504,+Chicago,+IL+60628,+USA"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex flex-col items-center bg-[#f1fdf1] p-3 sm:p-6 rounded-xl shadow transition hover:shadow-lg hover:bg-[#e6fbe6] cursor-pointer focus:outline-none w-full"
@@ -98,8 +98,8 @@ const ContactPage = () => {
                             <MapPin className="text-[#144afc] w-5 h-5 sm:w-7 sm:h-7" />
                         </div>
                         <span className="text-gray-900 font-semibold text-xs sm:text-lg md:text-xl xl:text-2xl text-center">
-                            2225 Centennial Drive<br />
-                            Gainesville, GA 30504
+                            11132 S Wabash Ave #504<br />
+                            Chicago, IL 60628, USA
                         </span>
                     </a>
                 </div>

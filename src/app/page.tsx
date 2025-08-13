@@ -155,7 +155,7 @@ export default function Home() {
 
       {/* Services Section */}
       <article className="w-full bg-[#EFEFEF] px-2 py-6 xs:px-3 sm:px-4 md:px-8">
-        <div className="max-w-full mx-auto grid grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 xl:grid-cols-3 md:gap-8 xl:gap-10 px-0 xs:px-2 sm:px-0">
+        <div className="max-w-full mx-auto lg:mx-40 grid grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 xl:grid-cols-2 md:gap-8 xl:gap-10 px-0 xs:px-2 sm:px-0">
           {[
             {
               title: "Pharmacogenomics Testing",
@@ -331,14 +331,12 @@ export default function Home() {
 
 
       {/* Blog & Contact Section */}
-      <section className="flex flex-col bg-white xl:flex-row justify-around items-center w-full sm:px-4 md:px-8 py-8 gap-8 xl:gap-12 px-4 xl:px-20">
-        {/* Blog Section */}
-        <div className="flex flex-col gap-4 w-full">
+      {/* <section className="flex flex-col bg-white xl:flex-row justify-around items-center w-full sm:px-4 md:px-8 py-8 gap-8 xl:gap-12 px-4 xl:px-20">
+        <article className="flex flex-col gap-4 w-full">
           <h2 className="text-xl sm:text-2xl md:text-3xl xl:text-5xl text-[#144afc] py-2 sm:py-4 font-medium text-center xl:text-left">
             Latest Blogs
           </h2>
           <div className="flex flex-col gap-3">
-            {/* Responsive images: stack vertically on mobile, row on sm+ */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 w-full">
               {[
                 { src: "/Home/b1.webp", label: "Necessity" },
@@ -369,21 +367,23 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center xl:justify-start mt-2">
-            {/* <Link
+            <Link
               href="/blog"
               className="bg-[#424492] text-white px-5 py-2 rounded-md font-semibold w-fit text-base sm:text-lg md:text-xl xl:text-2xl hover:bg-[#35356e] transition-colors"
             >
               Read More Blogs
-            </Link> */}
+            </Link>
           </div>
-        </div>
+        </article>
 
-        {/* Contact Section */}
-        <div className="w-full mt-8 xl:mt-0">
-          <ContactDetails />
-        </div>
+      
+      </section> */}
+
+
+      {/* Contact Section */}
+      <section className="w-full p-1 xl:mt-0 bg-white">
+        <ContactDetails />
       </section>
-
 
     </main>
 

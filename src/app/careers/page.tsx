@@ -123,7 +123,7 @@ export default function CareersPage() {
                     <div className="flex justify-center md:justify-start">
                         <Link
                             href="/contact"
-                            className="mt-2 px-6 py-2 text-base sm:text-lg font-semibold bg-[#144afc] text-white border-2 border-[#46A941] rounded-3xl shadow hover:bg-[#46A941] transition-colors duration-200 flex items-center justify-center"
+                            className="mt-2 px-6 py-2 text-base sm:text-lg font-semibold bg-[#144afc] text-white rounded-3xl shadow hover:bg-[#46A941] transition-colors duration-200 flex items-center justify-center"
                         >
                             View Opportunities
                         </Link>

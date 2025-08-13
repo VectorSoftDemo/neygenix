@@ -11,7 +11,8 @@ export default function Footer() {
               {/* <img src="/globe.svg" alt="Logo" className="h-14" /> */}
               <div>
                 <p className="text-lg sm:text-2xl xl:text-2xl font-bold text-[#65bc7b] leading-tight">
-                  Neugenix<br />GLOBAL HEALTH
+                  Neugenix 
+                  {/* <br />GLOBAL HEALTH */}
                 </p>
                 <p className="text-xs sm:text-sm xl:text-lg text-gray-300 font-light">
                   Understand more. Experience wellness.
@@ -28,10 +29,10 @@ export default function Footer() {
               <p className="text-xs sm:text-base xl:text-xl text-gray-200">
                 Phone:{" "}
                 <a
-                  href="tel:6782768412"
+                  href="tel:9727623120"
                   className="text-[#65bc7b] underline hover:text-[#4a9e5e] transition-colors"
                 >
-                  678-276-8412
+                  (972) 762-3120
                 </a>
               </p>
               <p className="text-xs sm:text-base xl:text-xl text-gray-200">
@@ -47,7 +48,7 @@ export default function Footer() {
           </div>
 
           {/* Right: News Section */}
-          <div className="flex-1 min-w-0 flex flex-col gap-4 sm:gap-6">
+          {/* <div className="flex-1 min-w-0 flex flex-col gap-4 sm:gap-6">
             <NewsItem
               img="Footer/f1.webp"
               title="Neugenix Global Health Acknowledged as Pioneers in Cancer Genomics and Receives GHP Award"
@@ -57,15 +58,16 @@ export default function Footer() {
               img="Footer/f2.webp"
               title="Authentidate Declares Corporate Rebranding To Neugenix Global Health Corp"
               summary="Authentidate Holding Corp. finalized its rebranding to Neugenix Global Health Corp. New trading symbol AGHC is now active."
-            />
+            /> */}
             {/* <div className="flex flex-wrap items-center justify-center gap-2 bg-white bg-opacity-10 rounded p-4">
               <span className="text-xl text-gray-300 text-center">
                 For all of your medical and diagnostic testing requirements, trust
               </span>
               <span className="text-3xl font-bold text-[#2d2e83]">NuegenixSure</span>
               <span className="text-xl text-gray-300">™</span>
+            </div> 
             </div> */}
-          </div>
+
         </div>
       </div>
 

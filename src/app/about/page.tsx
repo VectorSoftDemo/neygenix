@@ -320,7 +320,7 @@ export default function AboutUs() {
           </div>
         </div>
         {/* Image */}
-        <div className="hidden md:flex flex-shrink-0 w-full max-w-[220px] sm:max-w-[260px] md:max-w-[200px] md:w-[200px] h-[220px] sm:h-[300px] md:h-[400px] mb-6 md:mb-0 items-center justify-center">
+        {/* <div className="hidden md:flex flex-shrink-0 w-full max-w-[220px] sm:max-w-[260px] md:max-w-[200px] md:w-[200px] h-[220px] sm:h-[300px] md:h-[400px] mb-6 md:mb-0 items-center justify-center">
           <Image
             src="/halflogo.webp"
             alt="Neugenix Core Values"
@@ -329,7 +329,7 @@ export default function AboutUs() {
             height={400}
             priority
           />
-        </div>
+        </div> */}
       </section>
 
 

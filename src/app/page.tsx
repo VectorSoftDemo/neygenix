@@ -248,7 +248,7 @@ export default function Home() {
         </div>
 
         {/* Right image (unchanged size) */}
-        <div className="hidden lg:flex w-full lg:w-1/2 mt-6 lg:mt-0 justify-end items-center">
+        {/* <div className="hidden lg:flex w-full lg:w-1/2 mt-6 lg:mt-0 justify-end items-center">
           <Image
             src="halflogo.webp"
             alt="Culture Visual"
@@ -256,7 +256,7 @@ export default function Home() {
             height={400}
             className="object-contain"
           />
-        </div>
+        </div> */}
       </article>
 
       {/* Career Opportunities */}
@@ -279,11 +279,14 @@ export default function Home() {
         </div>
 
         {/* Image */}
-        <div className="w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] lg:w-[360px] lg:h-[360px]">
-          <img
-            src="https://aeonglobalhealth.com/wp-content/uploads/2022/06/aeon-ijmage-02.png"
-            alt="Career Opportunities"
-            className="w-full h-full object-cover"
+        <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+          <Image
+            src="/Career/c1.webp"
+            alt="Career"
+            width={320}
+            height={320}
+            className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 xl:w-80 xl:h-80 object-cover rounded-2xl shadow-2xl border-4 "
+            unoptimized
           />
         </div>
       </article>
@@ -291,7 +294,7 @@ export default function Home() {
       {/* Testimonials */}
       <article className="flex flex-col md:flex-row justify-between items-center w-full bg-[#] py-4 gap-6 md:gap-10">
         {/* Left image (hidden on mobile) */}
-        <div className="hidden md:flex flex-col gap-4">
+        {/* <div className="hidden md:flex flex-col gap-4">
           <Image
             src="halflogo2.webp"
             alt="Toxicology Testing"
@@ -300,7 +303,7 @@ export default function Home() {
             height={444}
             unoptimized
           />
-        </div>
+        </div> */}
         {/* Text Content */}
         <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-8 xl:pr-8 gap-4 mx-auto">
           <h1 className="text-lg sm:text-xl xl:text-5xl font-bold text-[#144afc] text-center xl:text-left">
@@ -312,7 +315,7 @@ export default function Home() {
             </p>
           </div>
           <p className="text-sm sm:text-base xl:text-2xl text-gray-800 text-center xl:text-left">
-            <span className="font-semibold">Mustafa Chagani </span>
+            <span className="font-semibold">David John </span>
             <span className="block sm:inline"> CEO of The Texas International Institute of Health Professions</span>
           </p>
         </div>

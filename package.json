@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve@latest out",
-    "lint": "next lint"
+    "lint": "next lint",
+        "deploy": "bun i && bun run build && aws s3 sync out/ s3://neugenix.com --delete"
   },
   "dependencies": {
     "lucide-react": "^0.539.0",

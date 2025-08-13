@@ -142,10 +142,13 @@ export default function ServicesPage() {
                             Impacted Medications and Genes Tested
                         </h1>
                         <div className="w-full flex justify-center">
-                            <img
-                                src="https://aeonglobalhealth.com/wp-content/uploads/2020/09/PGx-1200x690.png"
+                            <Image
+                                src="/Services/s11.webp"
                                 alt="Impacted Medications and Genes"
+                                width={800}
+                                height={400}
                                 className="w-full h-auto rounded-lg object-contain"
+                                unoptimized
                             />
                         </div>
                     </div>

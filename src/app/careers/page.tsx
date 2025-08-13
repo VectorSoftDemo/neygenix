@@ -135,7 +135,7 @@ export default function CareersPage() {
                         alt="Career"
                         width={320}
                         height={320}
-                        className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 xl:w-80 xl:h-80 object-cover rounded-2xl shadow-2xl border-4 border-black"
+                        className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 xl:w-80 xl:h-80 object-cover rounded-2xl shadow-2xl border-4 "
                         unoptimized
                     />
                 </div>
